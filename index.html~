@@ -2,6 +2,7 @@
 <script src="searcher.js"></script>
 <script src="parser.js"></script>
 <script src="analyzer.js"></script>
+<script src="product.js"></script>
 <script src="request-manager.js"></script>
 <script src="main.js"></script>
 
@@ -10,20 +11,19 @@
 </span>
 
 <span id="productData">
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
 &lt;meta charset=&quot;UTF-8&quot; /&gt;
-&lt;title&gt;Steam Community Market :: Listings for 214610-Curtis Campbell (Foil)&lt;/title&gt;
+&lt;title&gt;Steam Community Market :: Listings for Auspicious Bracers of the Clergy Ascetic&lt;/title&gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=F3z3QpekjE2f&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/buttons.css?v=RPKVppE7GyO7&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/shared_global.css?v=CB2oVr7MXkuE&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/globalv2.css?v=ZGVsQ5tURLf1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
-&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/modalContent.css?v=.3ZY4VGdKrzFz&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/economy.css?v=KhJxplnpbd14&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/economy_market.css?v=P4B7jpmJ6Q5X&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/html5.css?v=.MtSlvoLZL0Tb&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
-&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=F3z3QpekjE2f&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/header.css?v=quvm2wU5yG0p&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/prototype-1.7.js?v=.55t44gwuwgvw&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/scriptaculous/_combined.js?v=9XVsa_Ni33oN&amp;amp;l=english&amp;amp;load=effects,controls,slider,dragdrop&quot;&gt;&lt;/script&gt;
@@ -32,30 +32,29 @@
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/shared/javascript/tooltip.js?v=.BEle7nTilzRg&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=-F_6tnOi2iBG&amp;amp;l=english&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;$J = jQuery.noConflict();
-if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( &quot;&lt;scr&quot; + &quot;ipt type=\&quot;text\/javascript\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;amp;l=english\&quot;&gt;&lt;\/script&gt;\n&quot; ); };
+if ( typeof JSON != &#39;object&#39; || !JSON.stringify || !JSON.parse ) { document.write( &quot;&lt;scr&quot; + &quot;ipt type=\&quot;text\/javascript\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;amp;l=english\&quot;&gt;&lt;\/script&gt;\n&quot; ); };
 &lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/economy_common.js?v=1LohOdoSLPYI&amp;amp;l=english&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/economy.js?v=9q2_OcH3X1DF&amp;amp;l=english&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/market.js?v=7kIRw3viSu_l&amp;amp;l=english&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/modalv2.js?v=HsicoS9FYYTz&amp;amp;l=english&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/modalContent.js?v=6_oy0yOh6DLf&amp;amp;l=english&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/jquery.jqplot.min.js?v=.MtKHlYxlI0Rv&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/plugins/jqplot.cursor.min.js?v=.M2KHp3--unVY&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/plugins/jqplot.dateAxisRenderer.min.js?v=.4qfJsdWiq0OT&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/plugins/jqplot.highlighter.min.js?v=.bt1BStJ5PY3c&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33779068-1']);
-  _gaq.push(['_setSampleRate', '0.4']);
-  _gaq.push(['_setCustomVar', 1, 'Logged In', 'false', 2]);
-  _gaq.push(['_setCustomVar', 2, 'Client Type', 'External', 2]);
-  _gaq.push(['_setCustomVar', 3, 'Cntrlr', 'market', 3]);
-  _gaq.push(['_setCustomVar', 4, 'Method', &quot;market\/listings&quot;, 3]);
-  _gaq.push(['_trackPageview']);
-  _gaq.push(['_setSessionCookieTimeout', 900000]);
+  _gaq.push([&#39;_setAccount&#39;, &#39;UA-33779068-1&#39;]);
+  _gaq.push([&#39;_setSampleRate&#39;, &#39;0.4&#39;]);
+  _gaq.push([&#39;_setCustomVar&#39;, 1, &#39;Logged In&#39;, &#39;false&#39;, 2]);
+  _gaq.push([&#39;_setCustomVar&#39;, 2, &#39;Client Type&#39;, &#39;External&#39;, 2]);
+  _gaq.push([&#39;_setCustomVar&#39;, 3, &#39;Cntrlr&#39;, &#39;market&#39;, 3]);
+  _gaq.push([&#39;_setCustomVar&#39;, 4, &#39;Method&#39;, &quot;market\/listings&quot;, 3]);
+  _gaq.push([&#39;_trackPageview&#39;]);
+  _gaq.push([&#39;_setSessionCookieTimeout&#39;, 900000]);
   (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    var ga = document.createElement(&#39;script&#39;); ga.type = &#39;text/javascript&#39;; ga.async = true;
+    ga.src = (&#39;https:&#39; == document.location.protocol ? &#39;https://ssl&#39; : &#39;http://www&#39;) + &#39;.google-analytics.com/ga.js&#39;;
+    var s = document.getElementsByTagName(&#39;script&#39;)[0]; s.parentNode.insertBefore(ga, s);
   })();
 &lt;/script&gt;
 &lt;/head&gt;
@@ -75,7 +74,7 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 				&lt;!--[if lt IE 7]&gt;
 				&lt;style type=&quot;text/css&quot;&gt;
 				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
-				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://steamcommunity-a.akamaihd.net/public/images/header/globalheader_logo.png'); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=&#39;http://steamcommunity-a.akamaihd.net/public/images/header/globalheader_logo.png&#39;); }
 				&lt;/style&gt;
 				&lt;![endif]--&gt;
 			&lt;/div&gt;
@@ -115,8 +114,8 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 	&lt;/div&gt;
 	&lt;script type=&quot;text/javascript&quot;&gt;
 		jQuery(document).ready(function($) {
-			$('.tooltip').v_tooltip();
-			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+			$(&#39;.tooltip&#39;).v_tooltip();
+			$(&#39;#global_header .supernav&#39;).v_tooltip({&#39;location&#39;:&#39;bottom&#39;, &#39;tooltipClass&#39;: &#39;supernav_content&#39;, &#39;offsetY&#39;:-4, &#39;offsetX&#39;: 1, &#39;horizontalSnap&#39;: 4, &#39;tooltipParent&#39;: &#39;#global_header .supernav_container&#39;, &#39;correctForScreenSize&#39;: false});
 		});
 	&lt;/script&gt;
 
@@ -130,36 +129,36 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 							Install Steam						&lt;/a&gt;
 					&lt;/div&gt;
 
-																							&lt;a class=&quot;global_action_link&quot; href=&quot;https://steamcommunity.com/login/home/?goto=market%2Flistings%2F753%2F214610-Curtis+Campbell+%28Foil%29%3Fcc%3Dus&quot;&gt;Login&lt;/a&gt;
+																							&lt;a class=&quot;global_action_link&quot; href=&quot;https://steamcommunity.com/login/home/?goto=market%2Flistings%2F570%2FAuspicious+Bracers+of+the+Clergy+Ascetic&quot;&gt;Login&lt;/a&gt;
 							&amp;nbsp;|&amp;nbsp;
-												&lt;span class=&quot;pulldown global_action_link&quot; id=&quot;language_pulldown&quot; onclick=&quot;ShowMenu( this, 'language_dropdown', 'right' );&quot;&gt;language&lt;/span&gt;
+												&lt;span class=&quot;pulldown global_action_link&quot; id=&quot;language_pulldown&quot; onclick=&quot;ShowMenu( this, &#39;language_dropdown&#39;, &#39;right&#39; );&quot;&gt;language&lt;/span&gt;
 						&lt;div class=&quot;popup_block&quot; id=&quot;language_dropdown&quot; style=&quot;display: none;&quot;&gt;
 							&lt;div class=&quot;shadow_ul&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_top&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_ur&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_left&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_right&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_bl&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_bottom&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_br&quot;&gt;&lt;/div&gt;							&lt;div class=&quot;popup_body popup_menu shadow_content&quot;&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=bulgarian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'bulgarian' ); return false;&quot;&gt;&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080; (Bulgarian)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=czech&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'czech' ); return false;&quot;&gt;&#269;e&scaron;tina (Czech)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=danish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'danish' ); return false;&quot;&gt;Dansk (Danish)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=dutch&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'dutch' ); return false;&quot;&gt;Nederlands (Dutch)&lt;/a&gt;
-																																			&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=finnish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'finnish' ); return false;&quot;&gt;Suomi (Finnish)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=french&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'french' ); return false;&quot;&gt;Fran&ccedil;ais (French)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=german&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'german' ); return false;&quot;&gt;Deutsch (German)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=greek&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'greek' ); return false;&quot;&gt;&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940; (Greek)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=hungarian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'hungarian' ); return false;&quot;&gt;Magyar (Hungarian)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=italian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'italian' ); return false;&quot;&gt;Italiano (Italian)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=japanese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'japanese' ); return false;&quot;&gt;&#26085;&#26412;&#35486; (Japanese)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=koreana&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'koreana' ); return false;&quot;&gt;&#54620;&#44397;&#50612; (Korean)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=norwegian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'norwegian' ); return false;&quot;&gt;Norsk (Norwegian)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=polish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'polish' ); return false;&quot;&gt;Polski (Polish)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=portuguese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'portuguese' ); return false;&quot;&gt;Portugu&ecirc;s (Portuguese)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=brazilian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'brazilian' ); return false;&quot;&gt;Portugu&ecirc;s-Brasil (Portuguese-Brazil)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=romanian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'romanian' ); return false;&quot;&gt;Rom&acirc;n&#259; (Romanian)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=russian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'russian' ); return false;&quot;&gt;&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; (Russian)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=schinese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'schinese' ); return false;&quot;&gt;&#31616;&#20307;&#20013;&#25991; (Simplified Chinese)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=spanish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'spanish' ); return false;&quot;&gt;Espa&ntilde;ol (Spanish)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=swedish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'swedish' ); return false;&quot;&gt;Svenska (Swedish)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=tchinese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'tchinese' ); return false;&quot;&gt;&#32321;&#39636;&#20013;&#25991; (Traditional Chinese)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=thai&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'thai' ); return false;&quot;&gt;&#3652;&#3607;&#3618; (Thai)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=turkish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'turkish' ); return false;&quot;&gt;T&uuml;rk&ccedil;e (Turkish)&lt;/a&gt;
-																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=ukrainian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'ukrainian' ); return false;&quot;&gt;&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072; (Ukrainian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=bulgarian&quot; onclick=&quot;ChangeLanguage( &#39;bulgarian&#39; ); return false;&quot;&gt;????????? (Bulgarian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=czech&quot; onclick=&quot;ChangeLanguage( &#39;czech&#39; ); return false;&quot;&gt;ceština (Czech)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=danish&quot; onclick=&quot;ChangeLanguage( &#39;danish&#39; ); return false;&quot;&gt;Dansk (Danish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=dutch&quot; onclick=&quot;ChangeLanguage( &#39;dutch&#39; ); return false;&quot;&gt;Nederlands (Dutch)&lt;/a&gt;
+																																			&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=finnish&quot; onclick=&quot;ChangeLanguage( &#39;finnish&#39; ); return false;&quot;&gt;Suomi (Finnish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=french&quot; onclick=&quot;ChangeLanguage( &#39;french&#39; ); return false;&quot;&gt;Fran&#231;ais (French)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=german&quot; onclick=&quot;ChangeLanguage( &#39;german&#39; ); return false;&quot;&gt;Deutsch (German)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=greek&quot; onclick=&quot;ChangeLanguage( &#39;greek&#39; ); return false;&quot;&gt;???????? (Greek)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=hungarian&quot; onclick=&quot;ChangeLanguage( &#39;hungarian&#39; ); return false;&quot;&gt;Magyar (Hungarian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=italian&quot; onclick=&quot;ChangeLanguage( &#39;italian&#39; ); return false;&quot;&gt;Italiano (Italian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=japanese&quot; onclick=&quot;ChangeLanguage( &#39;japanese&#39; ); return false;&quot;&gt;??? (Japanese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=koreana&quot; onclick=&quot;ChangeLanguage( &#39;koreana&#39; ); return false;&quot;&gt;??? (Korean)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=norwegian&quot; onclick=&quot;ChangeLanguage( &#39;norwegian&#39; ); return false;&quot;&gt;Norsk (Norwegian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=polish&quot; onclick=&quot;ChangeLanguage( &#39;polish&#39; ); return false;&quot;&gt;Polski (Polish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=portuguese&quot; onclick=&quot;ChangeLanguage( &#39;portuguese&#39; ); return false;&quot;&gt;Portugu&#234;s (Portuguese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=brazilian&quot; onclick=&quot;ChangeLanguage( &#39;brazilian&#39; ); return false;&quot;&gt;Portugu&#234;s-Brasil (Portuguese-Brazil)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=romanian&quot; onclick=&quot;ChangeLanguage( &#39;romanian&#39; ); return false;&quot;&gt;Rom&#226;na (Romanian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=russian&quot; onclick=&quot;ChangeLanguage( &#39;russian&#39; ); return false;&quot;&gt;??????? (Russian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=schinese&quot; onclick=&quot;ChangeLanguage( &#39;schinese&#39; ); return false;&quot;&gt;???? (Simplified Chinese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=spanish&quot; onclick=&quot;ChangeLanguage( &#39;spanish&#39; ); return false;&quot;&gt;Espa&#241;ol (Spanish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=swedish&quot; onclick=&quot;ChangeLanguage( &#39;swedish&#39; ); return false;&quot;&gt;Svenska (Swedish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=tchinese&quot; onclick=&quot;ChangeLanguage( &#39;tchinese&#39; ); return false;&quot;&gt;???? (Traditional Chinese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=thai&quot; onclick=&quot;ChangeLanguage( &#39;thai&#39; ); return false;&quot;&gt;??? (Thai)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=turkish&quot; onclick=&quot;ChangeLanguage( &#39;turkish&#39; ); return false;&quot;&gt;T&#252;rk&#231;e (Turkish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=ukrainian&quot; onclick=&quot;ChangeLanguage( &#39;ukrainian&#39; ); return false;&quot;&gt;?????????? (Ukrainian)&lt;/a&gt;
 																&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;http://translation.steampowered.com&quot; target=&quot;_blank&quot;&gt;Help us translate Steam&lt;/a&gt;
 							&lt;/div&gt;
 						&lt;/div&gt;
@@ -174,14 +173,14 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 
 
 &lt;div id=&quot;modalBG&quot; style=&quot;display: none&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-	g_sessionID = &quot;c0935c6619e6340ead9b6ad5&quot;;
+	g_sessionID = &quot;77b8fd3d15a6c7ebf309a608&quot;;
 	g_steamID = false;
 
 	$J( function() {
 		InitMiniprofileHovers();
 		InitEmoticonHovers();
-		window.BindCommunityTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'community_tooltip', 'dataName': 'communityTooltip' } ); };
-		BindCommunityTooltip( $J('[data-community-tooltip]') );
+		window.BindCommunityTooltip = function( $Selector ) { $Selector.v_tooltip( {&#39;tooltipClass&#39;: &#39;community_tooltip&#39;, &#39;dataName&#39;: &#39;communityTooltip&#39; } ); };
+		BindCommunityTooltip( $J(&#39;[data-community-tooltip]&#39;) );
 	});
 
 	$J( function() { InitEconomyHovers( &quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/css\/skin_1\/economy.css?v=KhJxplnpbd14&quot;, &quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/economy_common.js?v=1LohOdoSLPYI&amp;l=english&quot;, &quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/economy.js?v=9q2_OcH3X1DF&amp;l=english&quot; );});&lt;/script&gt;&lt;!-- /header bar --&gt;
@@ -192,9 +191,9 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 		&lt;div class=&quot;modal_box_ctn&quot;&gt;
 			&lt;div class=&quot;notLoggedInText&quot;&gt;You need to sign in or create an account to do that.&lt;/div&gt;
 			&lt;div class=&quot;notLoggedInButtons&quot;&gt;
-				&lt;a class=&quot;btn_green_white_innerfade btn_medium&quot; href=&quot;https://steamcommunity.com/login/home/?goto=market%2Flistings%2F753%2F214610-Curtis%2520Campbell%2520%2528Foil%2529%3Fcc%3Dus&quot;&gt;&lt;span&gt;Sign In&lt;/span&gt;&lt;/a&gt;
+				&lt;a class=&quot;btn_green_white_innerfade btn_medium&quot; href=&quot;https://steamcommunity.com/login/home/?goto=market%2Flistings%2F570%2FAuspicious%2520Bracers%2520of%2520the%2520Clergy%2520Ascetic&quot;&gt;&lt;span&gt;Sign In&lt;/span&gt;&lt;/a&gt;
 				&lt;a class=&quot;btn_green_white_innerfade btn_medium&quot; href=&quot;http://store.steampowered.com/join&quot;&gt;&lt;span&gt;Create an Account&lt;/span&gt;&lt;/a&gt;
-				&lt;a class=&quot;btn_grey_black btn_medium&quot; onclick=&quot;hideModal( 'NotLoggedInWarning' )&quot;&gt;&lt;span&gt;Cancel&lt;/span&gt;&lt;/a&gt;
+				&lt;a class=&quot;btn_grey_black btn_medium&quot; onclick=&quot;hideModal( &#39;NotLoggedInWarning&#39; )&quot;&gt;&lt;span&gt;Cancel&lt;/span&gt;&lt;/a&gt;
 				&lt;div style=&quot;clear: left&quot;&gt;&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
@@ -230,17 +229,15 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
 	&lt;div id=&quot;mainContents&quot;&gt;
 		&lt;div class=&quot;market_listing_nav_container&quot;&gt;
 						&lt;div class=&quot;market_listing_nav&quot;&gt;
-									&lt;a href=&quot;http://steamcommunity.com/market/search?appid=753&quot;&gt;Steam&lt;/a&gt;
+									&lt;a href=&quot;http://steamcommunity.com/market/search?appid=570&quot;&gt;Dota 2&lt;/a&gt;
 					&amp;gt;
-											&lt;a href=&quot;http://steamcommunity.com/market/search?appid=753&amp;amp;category_753_Game[]=tag_app_214610&quot;&gt;Cherry Tree High Comedy Club Community Items&lt;/a&gt;
-						&amp;gt;
-										&lt;a href=&quot;http://steamcommunity.com/market/listings/753/214610-Curtis%20Campbell%20%28Foil%29&quot;&gt;Shinnosuke Kamikata (Foil)&lt;/a&gt;
+										&lt;a href=&quot;http://steamcommunity.com/market/listings/570/Auspicious%20Bracers%20of%20the%20Clergy%20Ascetic&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/a&gt;
 							&lt;/div&gt;
 		&lt;/div&gt;
-				&lt;div class=&quot;market_page_fullwidth market_listing_firstsection&quot;&gt;
-			&lt;div class=&quot;market_listing_iteminfo&quot;&gt;
-				&lt;div class=&quot;market_listing_largeimage&quot;&gt;
-        &lt;img src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A/360fx360f&quot; alt=&quot;&quot; /&gt;
+							&lt;div class=&quot;market_page_fullwidth market_listing_firstsection&quot;&gt;
+				&lt;div class=&quot;market_listing_iteminfo&quot;&gt;
+                    &lt;div class=&quot;market_listing_largeimage&quot;&gt;
+        &lt;img src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY/360fx360f&quot; alt=&quot;&quot; /&gt;
 &lt;/div&gt;
 &lt;div id=&quot;largeiteminfo&quot;&gt;
     &lt;div class=&quot;inventory_iteminfo hover_box&quot; id=&quot;largeiteminfo_clienthover&quot;&gt;
@@ -270,77 +267,621 @@ if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.writ
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-
-								&lt;div class=&quot;market_commodity_order_block&quot;&gt;
-					&lt;div class=&quot;market_commodity_explanation&quot;&gt;
-						This item is a commodity, where all the individual items are effectively identical. Individual listings aren't accessible; you can instead issue orders to buy at a specific price, with the cheapest listing getting automatically matched to the highest buy order. &lt;a href='#' style=&quot;display:none&quot;&gt;Read more about buy orders.&lt;/a&gt;
+					&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+					&lt;div id=&quot;largeiteminfo_warning&quot;&gt;
+						&lt;br/&gt;
+						The appearance of items in the individual listings may vary slightly from the one above. For example, items could have custom names, descriptions, or colors.						&lt;div&gt;
+															&lt;br&gt;
+								&lt;div&gt;
+									After purchase, this item:									&lt;ul&gt;
+																					&lt;li&gt;will not be tradable for one week&lt;/li&gt;
+																															&lt;li&gt;cannot be listed on the Steam Community Market for one week&lt;/li&gt;
+																			&lt;/ul&gt;
+								&lt;/div&gt;
+													&lt;/div&gt;
 					&lt;/div&gt;
-											&lt;div class=&quot;market_commodity_explanation&quot;&gt;
-							After purchase, this item:							&lt;ul&gt;
-																	&lt;li&gt;will not be tradable for one week&lt;/li&gt;
-																									&lt;li&gt;cannot be listed on the Steam Community Market for one week&lt;/li&gt;
-															&lt;/ul&gt;
+					&lt;hr style=&quot;background-color: #333; border-style: solid none none; border-color: black; border-width: 1px 0 0; height: 2px&quot;&gt;
+											&lt;div id=&quot;pricehistory&quot;&gt;&lt;/div&gt;
+						&lt;br&gt;
+						&lt;div class=&quot;zoom_controls pricehistory_zoom_controls&quot;&gt;
+							Zoom graph							&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomDays( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest, 7 );&quot; href=&quot;javascript:void(0)&quot;&gt;Week&lt;/a&gt;
+							&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomDays( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest, 30 );&quot; href=&quot;javascript:void(0)&quot;&gt;Month&lt;/a&gt;
+							&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomLifetime( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest );&quot; href=&quot;javascript:void(0)&quot; style=&quot;padding-right: 0&quot;&gt;Lifetime&lt;/a&gt;
 						&lt;/div&gt;
 										&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-					&lt;div id=&quot;market_commodity_order_spread&quot;&gt;
-						&lt;div class=&quot;market_commodity_orders_block&quot;&gt;
-							&lt;div class=&quot;market_commodity_orders_interior&quot;&gt;
-								&lt;div class=&quot;market_commodity_orders_header&quot;&gt;
-									&lt;div class=&quot;market_commodity_order_summary&quot; id=&quot;market_commodity_forsale&quot; &gt;
-									&lt;/div&gt;
-									&lt;a class=&quot;btn_green_white_innerfade btn_medium market_commodity_buy_button&quot; href=&quot;javascript:void(0)&quot; onclick=&quot;Market_ShowBuyOrderPopup( 753, &amp;quot;214610-Curtis Campbell (Foil)&amp;quot;, &amp;quot;Shinnosuke Kamikata (Foil)&amp;quot; ); return false;&quot;&gt;
-										&lt;span&gt;Buy...&lt;/span&gt;
-									&lt;/a&gt;
-								&lt;/div&gt;
-								&lt;div id=&quot;market_commodity_forsale_table&quot; class=&quot;market_commodity_orders_table_container&quot;&gt;
-								&lt;/div&gt;
-							&lt;/div&gt;
-													&lt;/div&gt;
-						&lt;div class=&quot;market_commodity_orders_block&quot;&gt;
-							&lt;div class=&quot;market_commodity_orders_interior&quot;&gt;
-								&lt;div class=&quot;market_commodity_orders_header&quot;&gt;
-									&lt;div class=&quot;market_commodity_order_summary&quot; id=&quot;market_commodity_buyrequests&quot;&gt;
-									&lt;/div&gt;
-									&lt;a class=&quot;btn_green_white_innerfade btn_medium market_commodity_buy_button&quot; href=&quot;javascript:void(0)&quot; onclick=&quot;ShowModalContent('http://steamcommunity.com/my/inventory/?modal=1&amp;amp;market=1#753', 'Choose an item from your inventory', 'http://steamcommunity.com/my/inventory/#753', false); return false;&quot;&gt;
-										&lt;span&gt;Sell...&lt;/span&gt;
-									&lt;/a&gt;
-								&lt;/div&gt;
-								&lt;div id=&quot;market_commodity_buyreqeusts_table&quot; class=&quot;market_commodity_orders_table_container&quot;&gt;
-								&lt;/div&gt;
-							&lt;/div&gt;
-						&lt;/div&gt;
-					&lt;/div&gt;
-					&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
 				&lt;/div&gt;
-				&lt;div id=&quot;market_activity_section&quot;&gt;
-					&lt;h3 class=&quot;market_activity_header&quot;&gt;Recent activity&lt;/h3&gt;
-					&lt;div id=&quot;market_activity_block&quot;&gt;
-						&lt;div id=&quot;market_activity_waiting_text&quot;&gt;Waiting for new activity...&lt;/div&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-								&lt;hr&gt;
-				&lt;div id=&quot;myListings&quot; style=&quot;border: none&quot;&gt;
-									&lt;/div&gt;
-				&lt;hr&gt;
-
-									&lt;div id=&quot;pricehistory&quot;&gt;&lt;/div&gt;
-					&lt;br&gt;
-					&lt;div class=&quot;zoom_controls pricehistory_zoom_controls&quot;&gt;
-						Zoom graph						&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomDays( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest, 7 );&quot; href=&quot;javascript:void(0)&quot;&gt;Week&lt;/a&gt;
-						&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomDays( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest, 30 );&quot; href=&quot;javascript:void(0)&quot;&gt;Month&lt;/a&gt;
-						&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomLifetime( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest );&quot; href=&quot;javascript:void(0)&quot; style=&quot;padding-right: 0&quot;&gt;Lifetime&lt;/a&gt;
-					&lt;/div&gt;
-								&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-				&lt;hr&gt;
-				&lt;div id=&quot;orders_histogram&quot;&gt;&lt;/div&gt;
 			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
+			&lt;div id=&quot;listings&quot; class=&quot;market_page_fullwidth&quot; style=&quot;padding-top: 0&quot;&gt;
+				&lt;div class=&quot;market_listing_filter&quot;&gt;
+	&lt;div class=&quot;market_listing_filter_contents&quot;&gt;
+		&lt;form id=&quot;market_listing_filter_form&quot; accept-charset=&quot;UTF8&quot; action=&quot;http://steamcommunity.com/market/listings/570/Auspicious%20Bracers%20of%20the%20Clergy%20Ascetic&quot; method=&quot;GET&quot; &gt;
+					&lt;span class=&quot;market_listing_filter_searchhint&quot;&gt;
+									Looking for a specific item?							&lt;/span&gt;
+			&lt;span style=&quot;position: relative; display: inline-block;&quot;&gt;
+									&lt;input class=&quot;filter_search_box market_search_filter_search_box&quot; type=&quot;text&quot; id=&quot;market_listing_filter_search_box&quot; value=&quot;&quot; placeholder=&quot;Search name, description, type&quot; name=&quot;filter&quot; autocomplete=&quot;off&quot; /&gt;
+								&lt;input class=&quot;market_search_submit_button&quot; id=&quot;market_listing_filter_submit&quot; type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+			&lt;/span&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/div&gt;				&lt;div class=&quot;market_large_tab_well&quot;&gt;
+					&lt;h2 class=&quot;market_section_title&quot;&gt;
+						Listings					&lt;/h2&gt;
+					&lt;div class=&quot;market_large_tab_well_gradient selectableNone&quot;&gt;&lt;/div&gt;
+					&lt;div class=&quot;market_tab_well_tabs&quot;&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;market_section_header_cap selectableNone&quot;&gt;&lt;/div&gt;
+									&lt;/div&gt;
+				&lt;div id=&quot;searchResultsTable&quot; class=&quot;market_content_block market_home_listing_table market_home_main_listing_table market_listing_table&quot;&gt;
+					&lt;div id=&quot;searchResultsRows&quot;&gt;
+						&lt;div class=&quot;market_listing_table_header&quot;&gt;
+	&lt;span class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;&lt;/span&gt;
+	&lt;span class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;PRICE&lt;/span&gt;
+	&lt;span class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;SELLER&lt;/span&gt;
+	&lt;div&gt;&lt;span class=&quot;market_listing_header_namespacer&quot;&gt;&lt;/span&gt;NAME&lt;/div&gt;
+&lt;/div&gt;
 
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_344873960402567681&quot; id=&quot;listing_344873960402567681&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_344873960402567681_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;344873960402567681&#39;, 570, &#39;2&#39;, &#39;2351127570&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					&amp;#36;0.07				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					&amp;#36;0.05				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar offline&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/8d/8dc831682c9554b4c4d3967f6ea07f4981735aea.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
 	&lt;/div&gt;
 
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_344873960402567681_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_839144019515915209&quot; id=&quot;listing_839144019515915209&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_839144019515915209_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;839144019515915209&#39;, 570, &#39;2&#39;, &#39;2123797409&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_con
+00006000
+tents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					&amp;#36;0.07				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					&amp;#36;0.05				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar offline&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/f9/f902ce070966d7e46c1a25acaa17e52bc2632db0.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_839144019515915209_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_352755259751674362&quot; id=&quot;listing_352755259751674362&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_352755259751674362_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;352755259751674362&#39;, 570, &#39;2&#39;, &#39;2278933409&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					&amp;#36;0.07				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					&amp;#36;0.05				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar in-game&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/50/50e74d87b235b65992a6be1eae109c680714c66b.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_352755259751674362_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_343748227570397750&quot; id=&quot;listing_343748227570397750&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_343748227570397750_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;343748227570397750&#39;, 570, &#39;2&#39;, &#39;6997226623&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					&amp;#36;0.07				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					&amp;#36;0.05				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar offline&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/fe/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_343748227570397750_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_355007226643373514&quot; id=&quot;listing_355007226643373514&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_355007226643373514_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;355007226643373514&#39;, 570, &#39;2&#39;, &#39;6995888288&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					&amp;#36;0.07				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					&amp;#36;0.05				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar in-game&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/12/12e77bc456566293b074c087f2a13195664fb656.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_355007226643373514_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_827884358709182406&quot; id=&quot;listing_827884358709182406&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_827884358709182406_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;827884358709182406&#39;, 570, &#39;2&#39;, &#39;3327954858&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					3,30 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					2,88 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar in-game&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/38/3816bc9c2075a7d0ad958a0b1055c02f3b2cbcc1.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_827884358709182406_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_835766486889658226&quot; id=&quot;listing_835766486889658226&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_835766486889658226_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;835766486889658226&#39;, 570, &#39;2&#39;, &#39;5034126810&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					3,45 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					3 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar in-game&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/78/7874707d244d2eb77ecfee30757e0af0741446c0.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_835766486889658226_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_826758724091863925&quot; id=&quot;listing_826758724091863925&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_826758724091863925_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;826758724091863925&#39;, 570, &#39;2&#39;, &#39;2131540327&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					3,45 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					3 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar offline&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/c3/c399fd2c60eede47ac68ea8f47ca9a25ac72a592.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_826758724091863925_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_830136356249541928&quot; id=&quot;listing_830136356249541928&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_830136356249541928_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;830136356249541928&#39;, 570, &#39;2&#39;, &#39;6925151070&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					3,45 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					3 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar offline&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/73/738e0c8ea94f406df989ed688d8d5b0f22879ceb.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_830136356249541928_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;market_listing_row market_recent_listing_row listing_358384527383957352&quot; id=&quot;listing_358384527383957352&quot;&gt;
+	
+	&lt;div class=&quot;market_listing_item_img_container&quot;&gt;		&lt;img id=&quot;listing_358384527383957352_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4/62fx62f&quot; style=&quot;border-color: #32CD32;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;	&lt;/div&gt;
+			&lt;div class=&quot;market_listing_right_cell market_listing_action_buttons&quot;&gt;
+					&lt;div class=&quot;market_listing_buy_button&quot;&gt;
+								&lt;a href=&quot;javascript:BuyMarketListing(&#39;listing&#39;, &#39;358384527383957352&#39;, 570, &#39;2&#39;, &#39;5519617714&#39;)&quot; class=&quot;item_market_action_button item_market_action_button_green&quot;&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_left&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_contents&quot;&gt;
+						Buy Now					&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_edge item_market_action_button_right&quot;&gt;&lt;/span&gt;
+					&lt;span class=&quot;item_market_action_button_preload&quot;&gt;&lt;/span&gt;
+				&lt;/a&gt;
+							&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;div class=&quot;market_listing_right_cell market_listing_their_price&quot;&gt;
+		&lt;span class=&quot;market_table_value&quot;&gt;
+											&lt;span class=&quot;market_listing_price market_listing_price_with_fee&quot;&gt;
+					3,45 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+				&lt;span class=&quot;market_listing_price market_listing_price_without_fee&quot;&gt;
+					3 p&amp;#1091;&amp;#1073;.				&lt;/span&gt;
+						&lt;br/&gt;
+					&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_listing_right_cell market_listing_seller&quot;&gt;
+		&lt;span class=&quot;market_listing_owner_avatar&quot;&gt;
+			&lt;span class=&quot;playerAvatar offline&quot; &gt;
+				&lt;img src=&quot;http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/b9/b93c9641f540dbfed922a89668c8cb7b2c88314a.jpg&quot; alt=&quot;&quot;&gt;
+			&lt;/span&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+		&lt;span id=&quot;listing_358384527383957352_name&quot; class=&quot;market_listing_item_name&quot; style=&quot;color: #32CD32;&quot;&gt;Auspicious Bracers of the Clergy Ascetic&lt;/span&gt;
+		&lt;br/&gt;
+		&lt;span class=&quot;market_listing_game_name&quot;&gt;Dota 2&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					&lt;/div&gt;
+					
+		&lt;div id=&quot;searchResults_ctn&quot; class=&quot;market_paging&quot; style=&quot;&quot;&gt;
+			&lt;div class=&quot;market_paging_summary&quot;&gt;
+				Showing &lt;span id=&quot;searchResults_start&quot;&gt;1&lt;/span&gt;-&lt;span id=&quot;searchResults_end&quot;&gt;10&lt;/span&gt; of &lt;span id=&quot;searchResults_total&quot;&gt;56&lt;/span&gt; results			&lt;/div&gt;
+			&lt;div class=&quot;market_paging_controls&quot; id=&quot;searchResults_controls&quot;&gt;
+				&lt;span id=&quot;searchResults_btn_prev&quot; class=&quot;pagebtn&quot;&gt;&amp;lt;&lt;/span&gt;
+				&lt;span id=&quot;searchResults_links&quot;&gt;&lt;/span&gt;
+				&lt;span id=&quot;searchResults_btn_next&quot; class=&quot;pagebtn&quot;&gt;&amp;gt;&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+						&lt;/div&gt;
+			&lt;/div&gt;
+				&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;hover&quot; style=&quot;display: none;&quot;&gt;
+		&lt;div class=&quot;shadow_ul&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_top&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_ur&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_left&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_right&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_bl&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_bottom&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_br&quot;&gt;&lt;/div&gt;		&lt;div class=&quot;inventory_iteminfo hover_box shadow_content&quot; id=&quot;iteminfo_clienthover&quot;&gt;
+			&lt;div class=&quot;item_desc_content&quot; id=&quot;hover_content&quot;&gt;
+				&lt;div class=&quot;item_desc_icon&quot;&gt;
+					&lt;div class=&quot;item_desc_icon_center&quot;&gt;
+						&lt;img id=&quot;hover_item_icon&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/images/trans.gif&quot; alt=&quot;&quot; /&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;item_desc_description&quot;&gt;
+					&lt;h1 class=&quot;hover_item_name&quot; id=&quot;hover_item_name&quot;&gt;&lt;/h1&gt;
+					&lt;div class=&quot;fraud_warning&quot; id=&quot;hover_fraud_warnings&quot;&gt;&lt;/div&gt;
+					&lt;div class=&quot;item_desc_game_info&quot; id=&quot;hover_game_info&quot;&gt;
+						&lt;div class=&quot;item_desc_game_icon&quot;&gt;
+							&lt;img id=&quot;hover_game_icon&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/images/trans.gif&quot; alt=&quot;&quot; /&gt;
+						&lt;/div&gt;
+						&lt;div id=&quot;hover_game_name&quot; class=&quot;ellipsis&quot;&gt;&lt;/div&gt;
+						&lt;div id=&quot;hover_item_type&quot; class=&quot;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;item_desc_descriptors&quot; id=&quot;hover_item_descriptors&quot;&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;item_desc_descriptors&quot; id=&quot;hover_item_owner_descriptors&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;hover_arrow_left&quot; id=&quot;hover_arrow_left&quot;&gt;
+			&lt;div class=&quot;hover_arrow_inner&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;hover_arrow_right&quot; id=&quot;hover_arrow_right&quot;&gt;
+			&lt;div class=&quot;hover_arrow_inner&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
+&lt;div id=&quot;market_buynow_dialog&quot; class=&quot;market_modal_dialog&quot; style=&quot;display: none;&quot;&gt;
+	&lt;div class=&quot;market_dialog_title&quot;&gt;
+		&lt;span id=&quot;market_buynow_dialog_title&quot;&gt;
+			Buy an item		&lt;/span&gt;
+		&lt;span class=&quot;market_dialog_cancel&quot;&gt;
+			&lt;a id=&quot;market_buynow_dialog_cancel&quot; href=&quot;#&quot; class=&quot;market_dialog_title_cancel&quot;&gt;Cancel&lt;span class=&quot;market_dialog_title_cancel_X&quot;&gt;X&lt;/span&gt;&lt;/a&gt;
+			&lt;a id=&quot;market_buynow_dialog_cancel_close&quot; href=&quot;#&quot; class=&quot;market_dialog_title_cancel&quot; style=&quot;display: none&quot;&gt;Close&lt;span class=&quot;market_dialog_title_cancel_X&quot;&gt;X&lt;/span&gt;&lt;/a&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div id=&quot;market_buynow_dialog_contents&quot; class=&quot;market_dialog_contents&quot;&gt;
+		&lt;div id=&quot;market_buynow_dialog_purchasecomplete_message&quot;&gt;
+			&lt;div class=&quot;market_dialog_topinfo&quot;&gt;
+				Congratulations on your purchase! You can view your new item in your &lt;a href=&quot;http://steamcommunity.com/my/inventory/&quot;&gt;inventory&lt;/a&gt;.			&lt;/div&gt;
+			&lt;div class=&quot;market_dialog_content_spacer&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_buynow_dialog_item&quot;&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;market_dialog_content_spacer&quot;&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_buynow_dialog_totals&quot; class=&quot;market_dialog_totals&quot;&gt;
+			&lt;div&gt;
+				&lt;span id=&quot;market_buynow_dialog_totals_subtotal&quot; class=&quot;market_dialog_totals_cost&quot;&gt;&amp;nbsp;&lt;/span&gt;
+				&lt;span class=&quot;market_dialog_totals_label&quot;&gt;Subtotal:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;br/&gt;
+			&lt;div&gt;
+				&lt;span id=&quot;market_buynow_dialog_totals_publisherfee&quot; class=&quot;market_dialog_totals_cost&quot;&gt;&amp;nbsp;&lt;/span&gt;
+				&lt;span class=&quot;market_dialog_totals_label&quot;&gt;&lt;span id=&quot;market_buynow_dialog_totals_publisherfee_gamename&quot;&gt;&lt;/span&gt; fee (&lt;span id=&quot;market_buynow_dialog_totals_publisherfee_percent&quot;&gt;&lt;/span&gt;%):&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;div&gt;
+				&lt;span id=&quot;market_buynow_dialog_totals_transactionfee&quot; class=&quot;market_dialog_totals_cost&quot;&gt;&amp;nbsp;&lt;/span&gt;
+				&lt;span class=&quot;market_dialog_totals_label&quot;&gt;Steam transaction fee (&lt;span id=&quot;market_buynow_dialog_totals_transactionfee_percent&quot;&gt;&lt;/span&gt;%):&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div&gt;
+				&lt;span class=&quot;market_dialog_totals_cost&quot;&gt;&amp;nbsp;&lt;/span&gt;
+				&lt;span class=&quot;market_dialog_totals_label market_buynow_dialog_totals_fee_collector&quot;&gt;
+											Fees charged by Valve Corporation									&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;market_dialog_totals_separator&quot;&gt;&lt;/div&gt;
+			&lt;div&gt;
+				&lt;span id=&quot;market_buynow_dialog_totals_total&quot; class=&quot;market_dialog_totals_cost&quot;&gt;&amp;nbsp;&lt;/span&gt;
+				&lt;span class=&quot;market_dialog_totals_label&quot;&gt;Total:&lt;/span&gt;
+			&lt;/div&gt;
+			&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;market_dialog_content_spacer&quot;&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_buynow_dialog_paymentinfo_frame_container&quot;&gt;
+			&lt;div id=&quot;market_buynow_dialog_paymentinfo_frame&quot; class=&quot;market_dialog_content_frame&quot;&gt;
+				&lt;div id=&quot;market_buynow_dialog_paymentinfo&quot; class=&quot;market_dialog_content market_dialog_content_darker&quot;&gt;
+					&lt;div&gt;
+						&lt;div id=&quot;market_buynow_dialog_paymentinfo_option_labels&quot;&gt;
+							&lt;span&gt;Payment method:&lt;/span&gt;
+							&lt;br/&gt;
+							&lt;br/&gt;
+							&lt;span&gt;Steam account:&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div&gt;
+							&lt;span id=&quot;market_buynow_dialog_paymentmethod&quot;&gt;My Steam Wallet &lt;span id=&quot;market_buynow_dialog_walletbalance&quot;&gt;(&lt;span id=&quot;market_buynow_dialog_walletbalance_amount&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;
+							&lt;br/&gt;
+							&lt;br/&gt;
+							&lt;span id=&quot;market_buynow_dialog_myaccountname&quot;&gt;&lt;/span&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div id=&quot;market_buynow_dialog_paymentinfo_bottomactions&quot;&gt;
+				
+00006000
+		&lt;div id=&quot;market_buynow_dialog_purchase_throbber&quot; style=&quot;display: none;&quot;&gt;
+							&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Working...&quot;&gt;
+						&lt;/div&gt;
+						&lt;a id=&quot;market_buynow_dialog_purchase&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide btn_uppercase&quot;&gt;&lt;span&gt;Purchase&lt;/span&gt;&lt;/a&gt;
+						&lt;a id=&quot;market_buynow_dialog_addfunds&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide btn_uppercase&quot; style=&quot;display: none&quot;&gt;&lt;span&gt;Add Funds&lt;/span&gt;&lt;/a&gt;
+						&lt;div id=&quot;market_buynow_dialog_accept_ssa_container&quot;&gt;
+							&lt;br/&gt;
+							&lt;input id=&quot;market_buynow_dialog_accept_ssa&quot; type=&quot;checkbox&quot; value=&quot;0&quot; name=&quot;accept_ssa&quot;&gt;
+							&lt;label id=&quot;market_buynow_dialog_accept_ssa_label&quot; for=&quot;market_buynow_dialog_accept_ssa&quot;&gt;I agree to the terms of the &lt;a href=&quot;javascript:SSAPopup();&quot; class=&quot;body_link&quot; &gt;Steam Subscriber Agreement&lt;/a&gt; (last updated Jul 3, 2013.)&lt;/label&gt;
+						&lt;/div&gt;
+													&lt;div class=&quot;market_purchase_restrictions&quot;&gt;
+								After purchase, this item:								&lt;ul&gt;
+																			&lt;li&gt;will not be tradable for one week&lt;/li&gt;
+																												&lt;li&gt;cannot be listed on the Steam Community Market for one week&lt;/li&gt;
+																	&lt;/ul&gt;
+							&lt;/div&gt;
+																	&lt;/div&gt;
+					&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_buynow_dialog_bottom_buttons&quot; style=&quot;display: none&quot;&gt;
+			&lt;div class=&quot;market_dialog_bottom_buttons&quot;&gt;
+				&lt;a id=&quot;market_buynow_dialog_close&quot; href=&quot;#&quot; class=&quot;btn_grey_white_innerfade btn_medium_wide&quot;&gt;&lt;span&gt;Close&lt;/span&gt;&lt;/a&gt;
+				&lt;a id=&quot;market_buynow_dialog_viewinventory&quot; href=&quot;http://steamcommunity.com/my/inventory/&quot; class=&quot;btn_grey_white_innerfade btn_medium_wide&quot;&gt;&lt;span&gt;View Inventory&lt;/span&gt;&lt;/a&gt;
+				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_buynow_dialog_error&quot;&gt;
+			&lt;br/&gt;
+			&lt;span id=&quot;market_buynow_dialog_error_text&quot;&gt;&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;market_removelisting_dialog&quot; class=&quot;market_modal_dialog&quot; style=&quot;display: none;&quot;&gt;
+	&lt;div class=&quot;market_dialog_title&quot;&gt;
+		&lt;span id=&quot;market_removelisting_dialog_title&quot;&gt;
+			Remove a listing		&lt;/span&gt;
+		&lt;span class=&quot;market_dialog_cancel&quot;&gt;
+			&lt;a id=&quot;market_removelisting_dialog_cancel&quot; href=&quot;#&quot; class=&quot;market_dialog_title_cancel&quot;&gt;Cancel&lt;span class=&quot;market_dialog_title_cancel_X&quot;&gt;X&lt;/span&gt;&lt;/a&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div id=&quot;market_removelisting_dialog_contents&quot; class=&quot;market_dialog_contents&quot;&gt;
+		&lt;div id=&quot;market_removelisting_dialog_confirmation&quot;&gt;
+			&lt;div&gt;
+				Remove the listing for &lt;span id=&quot;market_removelisting_dialog_itemname&quot;&gt;&lt;/span&gt; and return the item to your inventory?			&lt;/div&gt;
+			&lt;br/&gt;
+			&lt;div id=&quot;market_removelisting_dialog_buttons&quot;&gt;
+				&lt;div id=&quot;market_removelisting_dialog_accept_throbber&quot; style=&quot;display: none;&quot;&gt;
+					&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Working...&quot;&gt;
+				&lt;/div&gt;
+				&lt;a id=&quot;market_removelisting_dialog_accept&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide&quot;&gt;&lt;span&gt;Remove Listing&lt;/span&gt;&lt;/a&gt;
+				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_removelisting_dialog_error&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&quot;market_action_popup&quot; class=&quot;popup_block_new&quot; style=&quot;display: none;&quot;&gt;
 	&lt;div class=&quot;popup_body popup_menu&quot;&gt;
 		&lt;div id=&quot;market_action_popup_itemactions&quot;&gt;
@@ -373,142 +914,78 @@ var g_strLanguage = &quot;english&quot;;
 
 g_bModalModifyAnchorTargets = false;
 g_bModalCacheContent = false;
-&lt;/script&gt;&lt;div id=&quot;market_removelisting_dialog&quot; class=&quot;market_modal_dialog&quot; style=&quot;display: none;&quot;&gt;
-	&lt;div class=&quot;market_dialog_title&quot;&gt;
-		&lt;span id=&quot;market_removelisting_dialog_title&quot;&gt;
-			Remove a listing		&lt;/span&gt;
-		&lt;span class=&quot;market_dialog_cancel&quot;&gt;
-			&lt;a id=&quot;market_removelisting_dialog_cancel&quot; href=&quot;#&quot; class=&quot;market_dialog_title_cancel&quot;&gt;Cancel&lt;span class=&quot;market_dialog_title_cancel_X&quot;&gt;X&lt;/span&gt;&lt;/a&gt;
-		&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;div id=&quot;market_removelisting_dialog_contents&quot; class=&quot;market_dialog_contents&quot;&gt;
-		&lt;div id=&quot;market_removelisting_dialog_confirmation&quot;&gt;
-			&lt;div&gt;
-				Remove the listing for 
-000023F2
-&lt;span id=&quot;market_removelisting_dialog_itemname&quot;&gt;&lt;/span&gt; and return the item to your inventory?			&lt;/div&gt;
-			&lt;br/&gt;
-			&lt;div id=&quot;market_removelisting_dialog_buttons&quot;&gt;
-				&lt;div id=&quot;market_removelisting_dialog_accept_throbber&quot; style=&quot;display: none;&quot;&gt;
-					&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Working...&quot;&gt;
-				&lt;/div&gt;
-				&lt;a id=&quot;market_removelisting_dialog_accept&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide&quot;&gt;&lt;span&gt;Remove Listing&lt;/span&gt;&lt;/a&gt;
-				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div id=&quot;market_removelisting_dialog_error&quot;&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;&lt;div id=&quot;market_buy_commodity_popup&quot; style=&quot;display: none;&quot;&gt;
-	&lt;div class=&quot;popup_body popup_menu&quot;&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;market_buy_commodity_item_display&quot;&gt;
-		&lt;div class=&quot;market_listing_item_img_container&quot;&gt;
-			&lt;img id=&quot;mypurchase_0_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A/62fx62f&quot; style=&quot;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;		&lt;/div&gt;
-		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
-			&lt;span class=&quot;market_listing_item_name&quot; style=&quot;&quot;&gt;Shinnosuke Kamikata (Foil)&lt;/span&gt;&lt;br/&gt;
-			&lt;span class=&quot;market_listing_game_name&quot;&gt;Cherry Tree High Comedy Club Foil Trading Card&lt;/span&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;market_buy_commodity_input_block&quot;&gt;
-		&lt;div class=&quot;market_buy_commodity_popup_left_block&quot;&gt;
-			&lt;div class=&quot;market_buy_commodity_input_label&quot;&gt;What price do you want to pay:&lt;/div&gt;
-			&lt;div class=&quot;market_buy_commodity_input_label&quot;&gt;How many do you want to buy:&lt;/div&gt;
-			&lt;div class=&quot;market_buy_commodity_input_label&quot;&gt;Maximum price &lt;span class=&quot;market_whatsthis&quot; title=&quot;This is the most you can end up spending as a result of this buy order.
-Items will be purchased at the cheapest price available, so the order may end up costing less than this amount.&quot;&gt;(?)&lt;/span&gt;:&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;market_buy_commodity_popup_right_block&quot;&gt;
-			&lt;div&gt;&lt;input type=&quot;text&quot; id=&quot;market_buy_commodity_input_price&quot; name=&quot;input_price&quot;&gt; (per item)&lt;/div&gt;
-			&lt;div&gt;&lt;input type=&quot;text&quot; id=&quot;market_buy_commodity_input_quantity&quot; name=&quot;input_quantity&quot; value=&quot;1&quot;&gt;&lt;/div&gt;
-			&lt;div id=&quot;market_buy_commodity_order_total&quot;&gt;&amp;nbsp;&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-
-	&lt;div id=&quot;market_buynow_dialog_paymentinfo_frame_container&quot;&gt;
-		&lt;div id=&quot;market_buynow_dialog_paymentinfo_frame&quot; class=&quot;market_dialog_content_frame&quot;&gt;
-			&lt;div id=&quot;market_buynow_dialog_paymentinfo&quot; class=&quot;market_dialog_content market_dialog_content_darker&quot;&gt;
-				&lt;div&gt;
-					&lt;div id=&quot;market_buynow_dialog_paymentinfo_option_labels&quot;&gt;
-						&lt;span&gt;Payment method:&lt;/span&gt;
-						&lt;br/&gt;
-						&lt;br/&gt;
-						&lt;span&gt;Steam account:&lt;/span&gt;
-					&lt;/div&gt;
-					&lt;div&gt;
-						&lt;span id=&quot;market_buynow_dialog_paymentmethod&quot;&gt;My Steam Wallet &lt;span id=&quot;market_buynow_dialog_walletbalance&quot;&gt;(&lt;span id=&quot;market_buynow_dialog_walletbalance_amount&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;
-						&lt;br/&gt;
-						&lt;br/&gt;
-						&lt;span id=&quot;market_buynow_dialog_myaccountname&quot;&gt;&lt;/span&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;div id=&quot;market_buynow_dialog_paymentinfo_bottomactions&quot;&gt;
-					&lt;a id=&quot;market_buynow_dialog_purchase&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide btn_uppercase&quot; style=&quot;display: none&quot;&gt;&lt;span&gt;PLACE ORDER&lt;/span&gt;&lt;/a&gt;
-					&lt;a id=&quot;market_buynow_dialog_addfunds&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide btn_uppercase&quot;&gt;&lt;span&gt;Add Funds&lt;/span&gt;&lt;/a&gt;
-					&lt;div id=&quot;market_buynow_dialog_accept_ssa_container&quot;&gt;
-						&lt;br/&gt;
-						&lt;input id=&quot;market_buynow_dialog_accept_ssa&quot; type=&quot;checkbox&quot; value=&quot;0&quot; name=&quot;accept_ssa&quot;&gt;
-						&lt;label id=&quot;market_buynow_dialog_accept_ssa_label&quot; for=&quot;market_buynow_dialog_accept_ssa&quot;&gt;I agree to the terms of the &lt;a href=&quot;javascript:SSAPopup();&quot; class=&quot;body_link&quot; &gt;Steam Subscriber Agreement&lt;/a&gt; (last updated Jul 3, 2013.)&lt;/label&gt;
-					&lt;/div&gt;
-											&lt;div class=&quot;market_purchase_restrictions&quot;&gt;
-							After purchase, this item:							&lt;ul&gt;
-																	&lt;li&gt;will not be tradable for one week&lt;/li&gt;
-																									&lt;li&gt;cannot be listed on the Steam Community Market for one week&lt;/li&gt;
-															&lt;/ul&gt;
-						&lt;/div&gt;
-														&lt;/div&gt;
-				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-
-	&lt;div id=&quot;market_buynow_dialog_placing_order&quot; class=&quot;market_dialog_content_frame market_dialog_content market_dialog_content_darker&quot;&gt;
-		&lt;div id=&quot;market_buy_commodity_status&quot;&gt;&lt;/div&gt;
-		&lt;div id=&quot;market_buy_commodity_throbber&quot;&gt;
-			&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Working...&quot;&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;market_dialog_content_spacer&quot;&gt; &lt;/div&gt;
-		&lt;div id=&quot;market_buy_commodity_purchase_detail&quot;&gt;&lt;/div&gt;
-		&lt;div class=&quot;market_dialog_content_spacer&quot;&gt; &lt;/div&gt;
-		&lt;a id=&quot;market_buy_commodity_view_in_inventory&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide&quot; style=&quot;display: none&quot;&gt;&lt;span&gt;View item in inventory&lt;/span&gt;&lt;/a&gt;
-	&lt;/div&gt;
-
-	&lt;div id=&quot;market_buynow_dialog_error&quot;&gt;
-		&lt;br/&gt;
-		&lt;span id=&quot;market_buynow_dialog_error_text&quot;&gt;&lt;/span&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-
+&lt;/script&gt;
 	&lt;script type=&quot;text/javascript&quot;&gt;
-		var g_rgAppContextData = {&quot;753&quot;:{&quot;appid&quot;:753,&quot;name&quot;:&quot;Steam&quot;,&quot;icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/753\/135dc1ac1cd9763dfc8ad52f4e880d2ac058a36c.jpg&quot;,&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/app\/753&quot;},&quot;214610&quot;:{&quot;appid&quot;:214610,&quot;name&quot;:&quot;Cherry Tree High Comedy Club&quot;,&quot;icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/214610\/dd394c890351b494b14bb3fde401e298083dad6b.jpg&quot;,&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/app\/214610&quot;}};
-	var g_rgAssets = {&quot;753&quot;:{&quot;6&quot;:{&quot;1198917579&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:753,&quot;contextid&quot;:&quot;6&quot;,&quot;id&quot;:&quot;1198917579&quot;,&quot;classid&quot;:&quot;176478933&quot;,&quot;instanceid&quot;:&quot;246376139&quot;,&quot;amount&quot;:&quot;0&quot;,&quot;status&quot;:4,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A&quot;,&quot;icon_url_large&quot;:&quot;IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A&quot;,&quot;descriptions&quot;:[{&quot;value&quot;:&quot;Handsome lad who's popular with the girls.&quot;}],&quot;tradable&quot;:1,&quot;owner_actions&quot;:[{&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/my\/gamecards\/214610\/?border=1&quot;,&quot;name&quot;:&quot;View badge progress&quot;}],&quot;name&quot;:&quot;Shinnosuke Kamikata (Foil)&quot;,&quot;name_color&quot;:&quot;&quot;,&quot;type&quot;:&quot;Cherry Tree High Comedy Club Foil Trading Card&quot;,&quot;market_name&quot;:&quot;Shinnosuke Kamikata (Foil)&quot;,&quot;market_hash_name&quot;:&quot;214610-Shinnosuke Kamikata (Foil)&quot;,&quot;commodity&quot;:1,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/753\/135dc1ac1cd9763dfc8ad52f4e880d2ac058a36c.jpg&quot;,&quot;owner&quot;:0}}}};
-	var g_rgListingInfo = {&quot;432671323267375695&quot;:{&quot;listingid&quot;:&quot;432671323267375695&quot;,&quot;price&quot;:0,&quot;fee&quot;:0,&quot;publisher_fee_app&quot;:214610,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:753,&quot;contextid&quot;:&quot;6&quot;,&quot;id&quot;:&quot;1198917579&quot;,&quot;amount&quot;:&quot;0&quot;}}};
+		var g_rgAppContextData = {&quot;570&quot;:{&quot;appid&quot;:570,&quot;name&quot;:&quot;Dota 2&quot;,&quot;icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/app\/570&quot;}};
+		var g_rgAssets = {&quot;570&quot;:{&quot;2&quot;:{&quot;2351127570&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2351127570&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;2123797409&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2123797409&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;2278933409&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2278933409&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;6997226623&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;6997226623&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;6995888288&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;6995888288&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;3327954858&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;3327954858&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;5034126810&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;5034126810&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;2131540327&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2131540327&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;6925151070&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;6925151070&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;340885147&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0},&quot;5519617714&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;5519617714&quot;,&quot;classid&quot;:&quot;340915309&quot;,&quot;instanceid&quot;:&quot;776058327&quot;,&quot;amount&quot;:&quot;1&quot;,&quot;status&quot;:2,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqdns6FWvfSqBC0IwMkhrdpD5wVyElWa2din2VlcPxyZAZOrVk14QHxDrVk4LktFgq5jo4&quot;,&quot;icon_url_large&quot;:&quot;W_I_5GLm4wPcv9jJQ7z7tz_l_0sEIYUhRfbF4arNQkgGQGKd3kMuVpMgCwRZrh6EYkid1utIJeHIAw08CIvASUKCIKWI-UqtXsJAY-tkKmwcyIC7mRtQBXKCR_V7V4ZE-cKWvVnlWEHGMF1siN9Uxqqd75qFGfGFtxO2JlEmh-E4W5oQnx0ENjpjnDJidv53M1IY_1Ni5gjyDuB88uV5w3o8-ulsMW_w7PY&quot;,&quot;descriptions&quot;:[{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Used By: Anti-Mage&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;New Bloom 2014&quot;,&quot;color&quot;:&quot;99ccff&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot; &quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;The Clergy Ascetic&quot;,&quot;color&quot;:&quot;9da1a9&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Cloth of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Adornment of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Guard of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Reprieve of the Clergy Ascetic - Off-Hand&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Hood of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;Bracers of the Clergy Ascetic&quot;,&quot;color&quot;:&quot;6c7075&quot;},{&quot;type&quot;:&quot;html&quot;,&quot;value&quot;:&quot;A constant reminder of the world he left behind when he struck off on the ascetic&#39;s path.&quot;}],&quot;tradable&quot;:1,&quot;name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;name_color&quot;:&quot;32CD32&quot;,&quot;type&quot;:&quot;Common Bracers&quot;,&quot;market_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;market_hash_name&quot;:&quot;Auspicious Bracers of the Clergy Ascetic&quot;,&quot;commodity&quot;:0,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\
+00006000
+/images\/apps\/570\/0bbb630d63262dd66d2fdd0f7d37e8661a410075.jpg&quot;,&quot;owner&quot;:0}}}};
+	var g_rgCurrency = [];
+	var g_rgListingInfo = {&quot;344873960402567681&quot;:{&quot;listingid&quot;:&quot;344873960402567681&quot;,&quot;price&quot;:5,&quot;fee&quot;:2,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;steam_fee&quot;:1,&quot;publisher_fee&quot;:1,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2351127570&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;839144019515915209&quot;:{&quot;listingid&quot;:&quot;839144019515915209&quot;,&quot;price&quot;:5,&quot;fee&quot;:2,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;steam_fee&quot;:1,&quot;publisher_fee&quot;:1,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2123797409&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;352755259751674362&quot;:{&quot;listingid&quot;:&quot;352755259751674362&quot;,&quot;price&quot;:5,&quot;fee&quot;:2,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;steam_fee&quot;:1,&quot;publisher_fee&quot;:1,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2278933409&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;343748227570397750&quot;:{&quot;listingid&quot;:&quot;343748227570397750&quot;,&quot;price&quot;:5,&quot;fee&quot;:2,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;steam_fee&quot;:1,&quot;publisher_fee&quot;:1,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;6997226623&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;355007226643373514&quot;:{&quot;listingid&quot;:&quot;355007226643373514&quot;,&quot;price&quot;:5,&quot;fee&quot;:2,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;steam_fee&quot;:1,&quot;publisher_fee&quot;:1,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;6995888288&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;827884358709182406&quot;:{&quot;listingid&quot;:&quot;827884358709182406&quot;,&quot;price&quot;:288,&quot;fee&quot;:42,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2005&quot;,&quot;steam_fee&quot;:14,&quot;publisher_fee&quot;:28,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;3327954858&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;835766486889658226&quot;:{&quot;listingid&quot;:&quot;835766486889658226&quot;,&quot;price&quot;:300,&quot;fee&quot;:45,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2005&quot;,&quot;steam_fee&quot;:15,&quot;publisher_fee&quot;:30,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;5034126810&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;826758724091863925&quot;:{&quot;listingid&quot;:&quot;826758724091863925&quot;,&quot;price&quot;:300,&quot;fee&quot;:45,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2005&quot;,&quot;steam_fee&quot;:15,&quot;publisher_fee&quot;:30,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;2131540327&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;830136356249541928&quot;:{&quot;listingid&quot;:&quot;830136356249541928&quot;,&quot;price&quot;:300,&quot;fee&quot;:45,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2005&quot;,&quot;steam_fee&quot;:15,&quot;publisher_fee&quot;:30,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;6925151070&quot;,&quot;amount&quot;:&quot;1&quot;}},&quot;358384527383957352&quot;:{&quot;listingid&quot;:&quot;358384527383957352&quot;,&quot;price&quot;:300,&quot;fee&quot;:45,&quot;publisher_fee_app&quot;:570,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2005&quot;,&quot;steam_fee&quot;:15,&quot;publisher_fee&quot;:30,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:570,&quot;contextid&quot;:&quot;2&quot;,&quot;id&quot;:&quot;5519617714&quot;,&quot;amount&quot;:&quot;1&quot;}}};
 	var g_plotPriceHistory = null;
 	var g_timePriceHistoryEarliest = new Date();
 	var g_timePriceHistoryLatest = new Date();
-	var g_strLanguage = &quot;english&quot;;
-	var g_strCountryCode = &quot;US&quot;;
 
-	Event.observe( document, 'dom:loaded', function() {
+	ITEM_HOVER_DELAY = 250;
+
+	var g_oSearchResults = null;
+	Event.observe( document, &#39;dom:loaded&#39;, function() {
 		UserYou.LoadContexts( g_rgAppContextData );
 
-							CreateItemHoverFromContainer( g_rgAssets, 'listing_432671323267375695_name', 753, '6', '1198917579', 0 );
-		CreateItemHoverFromContainer( g_rgAssets, 'listing_432671323267375695_image', 753, '6', '1198917579', 0 );
+							CreateItemHoverFromContainer( g_rgAssets, &#39;listing_344873960402567681_name&#39;, 570, &#39;2&#39;, &#39;2351127570&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_344873960402567681_image&#39;, 570, &#39;2&#39;, &#39;2351127570&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_839144019515915209_name&#39;, 570, &#39;2&#39;, &#39;2123797409&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_839144019515915209_image&#39;, 570, &#39;2&#39;, &#39;2123797409&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_352755259751674362_name&#39;, 570, &#39;2&#39;, &#39;2278933409&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_352755259751674362_image&#39;, 570, &#39;2&#39;, &#39;2278933409&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_343748227570397750_name&#39;, 570, &#39;2&#39;, &#39;6997226623&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_343748227570397750_image&#39;, 570, &#39;2&#39;, &#39;6997226623&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_355007226643373514_name&#39;, 570, &#39;2&#39;, &#39;6995888288&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_355007226643373514_image&#39;, 570, &#39;2&#39;, &#39;6995888288&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_827884358709182406_name&#39;, 570, &#39;2&#39;, &#39;3327954858&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_827884358709182406_image&#39;, 570, &#39;2&#39;, &#39;3327954858&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_835766486889658226_name&#39;, 570, &#39;2&#39;, &#39;5034126810&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_835766486889658226_image&#39;, 570, &#39;2&#39;, &#39;5034126810&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_826758724091863925_name&#39;, 570, &#39;2&#39;, &#39;2131540327&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_826758724091863925_image&#39;, 570, &#39;2&#39;, &#39;2131540327&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_830136356249541928_name&#39;, 570, &#39;2&#39;, &#39;6925151070&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_830136356249541928_image&#39;, 570, &#39;2&#39;, &#39;6925151070&#39;, 1 );
+			CreateItemHoverFromContainer( g_rgAssets, &#39;listing_358384527383957352_name&#39;, 570, &#39;2&#39;, &#39;5519617714&#39;, 1 );
+		CreateItemHoverFromContainer( g_rgAssets, &#39;listing_358384527383957352_image&#39;, 570, &#39;2&#39;, &#39;5519617714&#39;, 1 );
 	
-			var rgAppItems = g_rgAssets[753];
-			var rgContextItems = rgAppItems['6'];
-			var rgItem = rgContextItems['1198917579'];
-			BuildHover( 'largeiteminfo', rgItem, false );
+			var rgAppItems = g_rgAssets[570];
+			var rgContextItems = rgAppItems[&#39;2&#39;];
+			var rgItem = rgContextItems[&#39;2351127570&#39;];
+			BuildHover( &#39;largeiteminfo&#39;, rgItem, false );
+
+			g_oSearchResults = new CAjaxPagingControls( {&quot;query&quot;:&quot;&quot;,&quot;total_count&quot;:56,&quot;pagesize&quot;:10,&quot;prefix&quot;:&quot;searchResults&quot;,&quot;class_prefix&quot;:&quot;market&quot;}, &#39;http://steamcommunity.com/market/listings/570/Auspicious%20Bracers%20of%20the%20Clergy%20Ascetic/&#39; );
+
+			var oParams = {
+				country: g_strCountryCode,
+				language: g_strLanguage,
+				currency: typeof( g_rgWalletInfo ) != &#39;undefined&#39; ? g_rgWalletInfo[&#39;wallet_currency&#39;] : 1			};
+
+							oParams.currency = &#39;1&#39;;
+			
+						g_oSearchResults.SetStaticParameters( oParams );
+
+			g_oSearchResults.SetResponseHandler( function( response ) {
+				g_rgAssets = response.assets;
+				g_rgCurrency = response.currency;
+				g_rgListingInfo = response.listinginfo;
+				eval( response.hovers );
+				MergeWithAppDataArray( response.app_data );
+				
+									InstallMarketActionMenuButtons();
+											});
 
 			MarketCheckHash();
 						} );
 
 			$J(document).ready(function(){
-			var line1=[[&quot;Jul 23 2013 01: +0&quot;,6.5,&quot;1&quot;],[&quot;Jul 24 2013 01: +0&quot;,5.026,&quot;1&quot;],[&quot;Jul 25 2013 01: +0&quot;,4.749,&quot;2&quot;],[&quot;Jul 29 2013 01: +0&quot;,4.642,&quot;1&quot;],[&quot;Aug 01 2013 01: +0&quot;,4.5,&quot;1&quot;],[&quot;Aug 07 2013 01: +0&quot;,5,&quot;1&quot;],[&quot;Aug 08 2013 01: +0&quot;,4.99,&quot;2&quot;],[&quot;Aug 09 2013 01: +0&quot;,4.291,&quot;2&quot;],[&quot;Aug 10 2013 01: +0&quot;,3.883,&quot;2&quot;],[&quot;Aug 11 2013 01: +0&quot;,2.99,&quot;1&quot;],[&quot;Aug 13 2013 01: +0&quot;,1.98,&quot;1&quot;],[&quot;Aug 14 2013 01: +0&quot;,1.64,&quot;2&quot;],[&quot;Aug 15 2013 01: +0&quot;,1.714,&quot;2&quot;],[&quot;Aug 16 2013 01: +0&quot;,1.948,&quot;2&quot;],[&quot;Aug 17 2013 01: +0&quot;,2.57,&quot;1&quot;],[&quot;Aug 25 2013 01: +0&quot;,2.3,&quot;1&quot;],[&quot;Aug 26 2013 01: +0&quot;,2.3,&quot;1&quot;],[&quot;Aug 27 2013 01: +0&quot;,2.299,&quot;1&quot;],[&quot;Aug 29 2013 01: +0&quot;,1.5,&quot;1&quot;],[&quot;Aug 30 2013 01: +0&quot;,1.477,&quot;1&quot;],[&quot;Sep 01 2013 01: +0&quot;,2.236,&quot;2&quot;],[&quot;Sep 03 2013 01: +0&quot;,2.53,&quot;1&quot;],[&quot;Sep 08 2013 01: +0&quot;,0.302,&quot;1&quot;],[&quot;Sep 11 2013 01: +0&quot;,2.309,&quot;1&quot;],[&quot;Sep 17 2013 01: +0&quot;,3.35,&quot;1&quot;],[&quot;Sep 21 2013 01: +0&quot;,0.109,
-000009D7
-&quot;1&quot;],[&quot;Sep 25 2013 01: +0&quot;,3.333,&quot;1&quot;],[&quot;Sep 30 2013 01: +0&quot;,2.015,&quot;1&quot;],[&quot;Oct 03 2013 01: +0&quot;,3.164,&quot;1&quot;],[&quot;Oct 05 2013 01: +0&quot;,2.95,&quot;1&quot;],[&quot;Oct 08 2013 01: +0&quot;,2.95,&quot;1&quot;],[&quot;Oct 14 2013 01: +0&quot;,2.79,&quot;1&quot;],[&quot;Oct 17 2013 01: +0&quot;,1.9,&quot;1&quot;],[&quot;Oct 25 2013 01: +0&quot;,1.794,&quot;1&quot;],[&quot;Oct 31 2013 01: +0&quot;,1.33,&quot;1&quot;],[&quot;Nov 02 2013 01: +0&quot;,1.31,&quot;1&quot;],[&quot;Nov 07 2013 01: +0&quot;,1.29,&quot;1&quot;],[&quot;Nov 11 2013 01: +0&quot;,0.941,&quot;2&quot;],[&quot;Nov 13 2013 01: +0&quot;,1.525,&quot;2&quot;],[&quot;Nov 16 2013 01: +0&quot;,1.88,&quot;1&quot;],[&quot;Nov 28 2013 01: +0&quot;,0.353,&quot;1&quot;],[&quot;Nov 30 2013 01: +0&quot;,0.354,&quot;1&quot;],[&quot;Dec 01 2013 01: +0&quot;,1.8,&quot;1&quot;],[&quot;Dec 08 2013 01: +0&quot;,1.15,&quot;1&quot;],[&quot;Dec 11 2013 01: +0&quot;,1.402,&quot;1&quot;],[&quot;Dec 20 2013 01: +0&quot;,1.895,&quot;2&quot;],[&quot;Dec 22 2013 01: +0&quot;,1.9,&quot;1&quot;],[&quot;Dec 24 2013 01: +0&quot;,1.91,&quot;1&quot;],[&quot;Jan 03 2014 01: +0&quot;,1.878,&quot;2&quot;],[&quot;Jan 05 2014 01: +0&quot;,1.88,&quot;1&quot;],[&quot;Jan 08 2014 01: +0&quot;,1.902,&quot;1&quot;],[&quot;Jan 29 2014 01: +0&quot;,2.39,&quot;1&quot;],[&quot;Feb 03 2014 01: +0&quot;,2.41,&quot;1&quot;],[&quot;Feb 11 2014 01: +0&quot;,2.288,&quot;1&quot;],[&quot;Feb 22 2014 01: +0&quot;,1.631,&quot;1&quot;],[&quot;Feb 23 2014 01: +0&quot;,1.57,&quot;1&quot;],[&quot;Feb 28 2014 01: +0&quot;,2.178,&quot;1&quot;],[&quot;Mar 05 2014 01: +0&quot;,2.15,&quot;1&quot;],[&quot;Mar 06 2014 01: +0&quot;,2.19,&quot;1&quot;],[&quot;Mar 14 2014 01: +0&quot;,1.842,&quot;1&quot;],[&quot;Mar 21 2014 01: +0&quot;,2.18,&quot;1&quot;],[&quot;Mar 23 2014 01: +0&quot;,2.221,&quot;1&quot;],[&quot;Apr 10 2014 01: +0&quot;,2.174,&quot;1&quot;],[&quot;Apr 18 2014 01: +0&quot;,2.35,&quot;1&quot;],[&quot;Apr 22 2014 01: +0&quot;,2.07,&quot;1&quot;],[&quot;Apr 23 2014 01: +0&quot;,2.44,&quot;1&quot;],[&quot;Apr 30 2014 01: +0&quot;,2.02,&quot;1&quot;],[&quot;May 03 2014 01: +0&quot;,2.46,&quot;1&quot;],[&quot;May 05 2014 01: +0&quot;,2.5,&quot;1&quot;],[&quot;May 08 2014 01: +0&quot;,2.23,&quot;1&quot;],[&quot;Jun 24 2014 01: +0&quot;,2,&quot;1&quot;],[&quot;Jul 05 2014 01: +0&quot;,1.4,&quot;1&quot;],[&quot;Jul 22 2014 01: +0&quot;,1.69,&quot;1&quot;],[&quot;Jul 30 2014 01: +0&quot;,1.84,&quot;1&quot;],[&quot;Aug 11 2014 01: +0&quot;,1.93,&quot;1&quot;],[&quot;Aug 14 2014 01: +0&quot;,0.99,&quot;1&quot;],[&quot;Aug 31 2014 01: +0&quot;,1.73,&quot;1&quot;],[&quot;Sep 15 2014 01: +0&quot;,1.7,&quot;1&quot;],[&quot;Sep 22 2014 01: +0&quot;,1.934,&quot;1&quot;],[&quot;Oct 14 2014 01: +0&quot;,1.894,&quot;1&quot;],[&quot;Oct 16 2014 01: +0&quot;,1.95,&quot;1&quot;]];
+			var line1=[[&quot;Feb 05 2014 01: +0&quot;,0.142,&quot;3&quot;],[&quot;Feb 06 2014 01: +0&quot;,0.087,&quot;98&quot;],[&quot;Feb 07 2014 01: +0&quot;,0.03,&quot;36&quot;],[&quot;Feb 08 2014 01: +0&quot;,0.037,&quot;52&quot;],[&quot;Feb 09 2014 01: +0&quot;,0.031,&quot;37&quot;],[&quot;Feb 10 2014 01: +0&quot;,0.03,&quot;48&quot;],[&quot;Feb 11 2014 01: +0&quot;,0.03,&quot;34&quot;],[&quot;Feb 12 2014 01: +0&quot;,0.03,&quot;53&quot;],[&quot;Feb 13 2014 01: +0&quot;,0.03,&quot;38&quot;],[&quot;Feb 14 2014 01: +0&quot;,0.033,&quot;40&quot;],[&quot;Feb 15 2014 01: +0&quot;,0.038,&quot;75&quot;],[&quot;Feb 16 2014 01: +0&quot;,0.036,&quot;56&quot;],[&quot;Feb 17 2014 01: +0&quot;,0.03,&quot;52&quot;],[&quot;Feb 18 2014 01: +0&quot;,0.042,&quot;29&quot;],[&quot;Feb 19 2014 01: +0&quot;,0.031,&quot;41&quot;],[&quot;Feb 20 2014 01: +0&quot;,0.037,&quot;58&quot;],[&quot;Feb 21 2014 01: +0&quot;,0.03,&quot;71&quot;],[&quot;Feb 22 2014 01: +0&quot;,0.03,&quot;40&quot;],[&quot;Feb 23 2014 01: +0&quot;,0.03,&quot;50&quot;],[&quot;Feb 24 2014 01: +0&quot;,0.03,&quot;42&quot;],[&quot;Feb 25 2014 01: +0&quot;,0.03,&quot;44&quot;],[&quot;Feb 26 2014 01: +0&quot;,0.03,&quot;43&quot;],[&quot;Feb 27 2014 01: +0&quot;,0.03,&quot;45&quot;],[&quot;Feb 28 2014 01: +0&quot;,0.03,&quot;22&quot;],[&quot;Mar 01 2014 01: +0&quot;,0.03,&quot;45&quot;],[&quot;Mar 02 2014 01: +0&quot;,0.031,&quot;32&quot;],[&quot;Mar 03 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Mar 04 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Mar 05 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Mar 06 2014 01: +0&quot;,0.03,&quot;22&quot;],[&quot;Mar 07 2014 01: +0&quot;,0.03,&quot;36&quot;],[&quot;Mar 08 2014 01: +0&quot;,0.03,&quot;22&quot;],[&quot;Mar 09 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Mar 10 2014 01: +0&quot;,0.049,&quot;14&quot;],[&quot;Mar 11 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Mar 12 2014 01: +0&quot;,0.03,&quot;21&quot;],[&quot;Mar 13 2014 01: +0&quot;,0.03,&quot;28&quot;],[&quot;Mar 14 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Mar 15 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;Mar 16 2014 01: +0&quot;,0.03,&quot;20&quot;],[&quot;Mar 17 2014 01: +0&quot;,0.03,&quot;29&quot;],[&quot;Mar 18 2014 01: +0&quot;,0.03,&quot;21&quot;],[&quot;Mar 19 2014 01: +0&quot;,0.03,&quot;40&quot;],[&quot;Mar 20 2014 01: +0&quot;,0.03,&quot;27&quot;],[&quot;Mar 21 2014 01: +0&quot;,0.032,&quot;30&quot;],[&quot;Mar 22 2014 01: +0&quot;,0.03,&quot;33&quot;],[&quot;Mar 23 2014 01: +0&quot;,0.03,&quot;36&quot;],[&quot;Mar 24 2014 01: +0&quot;,0.03,&quot;22&quot;],[&quot;Mar 25 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;Mar 26 2014 01: +0&quot;,0.03,&quot;28&quot;],[&quot;Mar 27 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Mar 28 2014 01: +0&quot;,0.033,&quot;17&quot;],[&quot;Mar 29 2014 01: +0&quot;,0.035,&quot;19&quot;],[&quot;Mar 30 2014 01: +0&quot;,0.033,&quot;17&quot;],[&quot;Mar 31 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Apr 01 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Apr 02 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Apr 03 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Apr 04 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Apr 05 2014 01: +0&quot;,0.03,&quot;20&quot;],[&quot;Apr 06 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Apr 07 2014 01: +0&quot;,0.033,&quot;19&quot;],[&quot;Apr 08 2014 01: +0&quot;,0.032,&quot;9&quot;],[&quot;Apr 09 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Apr 10 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 11 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Apr 12 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Apr 13 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Apr 14 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 15 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Apr 16 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 17 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 18 2014 01: +0&quot;,0.031,&quot;25&quot;],[&quot;Apr 19 2014 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Apr 20 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Apr 21 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 22 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Apr 23 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 24 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Apr 25 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Apr 26 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Apr 27 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Apr 28 2014 01: +0&quot;,0.03,&quot;32&quot;],[&quot;Apr 29 2014 01: +0&quot;,0.03,&quot;4&quot;],[&quot;Apr 30 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;May 01 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;May 02 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;May 03 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;May 04 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;May 05 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;May 06 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;May 07 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;May 08 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;May 09 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;May 10 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;May 11 2014 01: +0&quot;,0.03,&quot;26&quot;],[&quot;May 12 2014 01: +0&quot;,0.03,&quot;21&quot;],[&quot;May 13 2014 01: +0&quot;,0.222,&quot;12&quot;],[&quot;May 14 2014 01: +0&quot;,0.107,&quot;17&quot;],[&quot;May 15 2014 01: +0&quot;,0.03,&quot;20&quot;],[&quot;May 16 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;May 17 2014 01: +0&quot;,0.03,&quot;31&quot;],[&quot;May 18 2014 01: +0&quot;,0.03,&quot;25&quot;],[&quot;May 19 2014 01: +0&quot;,0.03,&quot;21&quot;],[&quot;May 20 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;May 21 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;May 22 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;May 23 2014 01: +0&quot;,0.052,&quot;19&quot;],[&quot;May 24 2014 01: +0&quot;,0.03,&quot;24&quot;],[&quot;May 25 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;May 26 2014 01: +0&quot;,0.03,&quot;41&quot;],[&quot;May 27 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;May 28 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;May 29 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;May 30 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;May 31 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Jun 01 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Jun 02 2014 01: +0&quot;,0.03,&quot;20&quot;],[&quot;Jun 03 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Jun 04 2014 01: +0&quot;,0.03,&quot;21&quot;],[&quot;Jun 05 2014 01: +0&quot;,0.03,&quot;25&quot;],[&quot;Jun 06 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jun 07 2014 01: +0&quot;,0.03,&quot;25&quot;],[&quot;Jun 08 2014 01: +0&quot;,0.03,&quot;32&quot;],[&quot;Jun 09 2014 01: +0&quot;,0.03,&quot;30&quot;],[&quot;Jun 10 2014 01: +0&quot;,0.03,&quot;22&quot;],[&quot;Jun 11 2014 01: +0&quot;,0.03,&quot;24&quot;],[&quot;Jun 12 2014 01: +0&quot;,0.03,&quot;32&quot;],[&quot;Jun 13 2014 01: +0&quot;,0.03,&quot;24&quot;],[&quot;Jun 14 2014 01: +0&quot;,0.03,&quot;37&quot;],[&quot;Jun 15 2014 01: +0&quot;,0.03,&quot;31&quot;],[&quot;Jun 16 2014 01: +0&quot;,0.03,&quot;31&quot;],[&quot;Jun 17 2014 01: +0&quot;,0.178,&quot;49&quot;],[&quot;Jun 18 2014 01: +0&quot;,0.03,&quot;64&quot;],[&quot;Jun 19 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Jun 20 2014 01: +0&quot;,0.03,&quot;33&quot;],[&quot;Jun 21 2014 01: +0&quot;,0.03,&quot;28&quot;],[&quot;Jun 22 2014 01: +0&quot;,0.172,&quot;22&quot;],[&quot;Jun 23 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Jun 24 2014 01: +0&quot;,0.03,&quot;26&quot;],[&quot;Jun 25 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jun 26 2014 01: +0&quot;,0.03,&quot;27&quot;],[&quot;Jun 27 2014 01: +0&quot;,0.03,&quot;27&quot;],[&quot;Jun 28 2014 01: +0&quot;,0.03,&quot;24&quot;],[&quot;Jun 29 2014 01: +0&quot;,0.03,&quot;30&quot;],[&quot;Jun 30 2014 01: +0&quot;,0.03,&quot;27&quot;],[&quot;Jul 01 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jul 02 2014 01: +0&quot;,0.03,&quot;24&quot;],[&quot;Jul 03 2014 01: +0&quot;,0.03,&quot;26&quot;],[&quot;Jul 04 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jul 05 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Jul 06 2014 01: +0&quot;,0.03,&quot;26&quot;],[&quot;Jul 07 2014 01: +0&quot;,0.03,&quot;21&quot;],[&quot;Jul 08 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Jul 09 2014 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Jul 10 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Jul 11 2014 01: +0&quot;,0.03,&quot;20&quot;],[&quot;Jul 12 2014 01: +0&quot;,0.03,&quot;26&quot;],[&quot;Jul 13 2014 01: +0&quot;,0.03,&quot;25&quot;],[&quot;Jul 14 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jul 15 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Jul 16 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Jul 17 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jul 18 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Jul 19 2014 01: +0&quot;,0.03,&quot;19&quot;],[&quot;Jul 20 2014 01: +0&quot;,0.03,&quot;18&quot;],[&quot;Jul 21 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Jul 22 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jul 23 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Jul 24 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jul 25 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Jul 26 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Jul 27 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Jul 28 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Jul 29 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Jul 30 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Jul 31 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Aug 01 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Aug 02 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Aug 03 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Aug 04 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Aug 05 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Aug 06 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Aug 07 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Aug 08 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Aug 09 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Aug 10 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Aug 11 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Aug 12 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Aug 13 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Aug 14 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Aug 15 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Aug 16 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Aug 17 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Aug 18 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Aug 19 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Aug 20 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Aug 21 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Aug 22 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Aug 23 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Aug 24 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Aug 25 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Aug 26 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Aug 27 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Aug 28 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Aug 29 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Aug 30 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Aug 31 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Sep 01 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Sep 02 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Sep 03 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Sep 04 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Sep 05 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Sep 06 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Sep 07 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Sep 08 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Sep 09 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Sep 10 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 11 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Sep 12 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 13 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Sep 14 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 15 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Sep 16 2014 01: +0&quot;,0.03,&quot;4&quot;],[&quot;Sep 17 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 18 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 19 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Sep 20 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Sep 21 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Sep 22 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Sep 23 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Sep 24 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Sep 25 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Sep 26 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 27 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Sep 28 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Sep 29 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Sep 30 2014 01: +0&quot;,0.171,&quot;10&quot;],[&quot;Oct 01 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Oct 02 2014 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Oct 03 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Oct 04 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 05 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Oct 06 2014 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Oct 07 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Oct 08 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Oct 09 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Oct 10 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Oct 11 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Oct 12 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Oct 13 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Oct 14 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Oct 15 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Oct 16 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 17 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 18 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 19 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Oct 20 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Oct 21 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Oct 22 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 23 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Oct 24 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Oct 25 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Oct 26 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Oct 27 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Oct 28 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 29 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Oct 30 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Oct 31 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Nov 01 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Nov 02 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Nov 03 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Nov 04 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Nov 05 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Nov 06 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Nov 07 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Nov 08 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Nov 09 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Nov 10 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Nov 11 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Nov 12 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Nov 13 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Nov 14 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Nov 15 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Nov 16 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Nov 17 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Nov 18 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Nov 19 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Nov 20 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Nov 21 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Nov 22 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Nov 23 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Nov 24 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Nov 25 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Nov 26 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Nov 27 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Nov 28 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Nov 29 2014 01: +0&quot;,0.03,&quot;4&quot;],[&quot;Nov 30 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Dec 01 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Dec 02 2014 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Dec 03 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Dec 04 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Dec 05 2014 01: +0&quot;,0.03,&quot;2&quot;],[&quot;Dec 06 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Dec 07 2014 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Dec 08 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Dec 09 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Dec 10 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Dec 11 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Dec 12 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Dec 13 2014 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Dec 14 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Dec 15 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Dec 16 2014 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Dec 17 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Dec 18 2014 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Dec 19 2014 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Dec 20 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Dec 21 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Dec 22 2014 01: +0&quot;,0.078,&quot;10&quot;],[&quot;Dec 23 2014 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Dec 24 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Dec 25 2014 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Dec 26 2014 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Dec 27 2014 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Dec 28 2014 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Dec 29 2014 01: +0&quot;,0.03,&quot;20&quot;],[&quot;Dec 30 2014 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Dec 31 2014 01: +0&quot;,0.041,&quot;16&quot;],[&quot;Jan 01 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jan 02 2015 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Jan 03 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Jan 04 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jan 05 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Jan 06 2015 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Jan 07 2015 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Jan 08 2015 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Jan 09 2015 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Jan 10 2015 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Jan 11 2015 01: +0&quot;,0.058,&quot;9&quot;],[&quot;Jan 12 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Jan 13 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Jan 14 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Jan 15 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jan 16 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jan 17 2015 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Jan 18 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Jan 19 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Jan 20 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jan 21 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Jan 22 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Jan 23 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Jan 24 2015 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Jan 25 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Jan 26 2015 01: +0&quot;,0.206,&quot;12&quot;],[&quot;Jan 27 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jan 28 2015 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Jan 29 2015 01: +0&quot;,1.932,&quot;7&quot;],[&quot;Jan 30 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Jan 31 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Feb 01 2015 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Feb 02 2015 01: +0&quot;,4.009,&quot;9&quot;],[&quot;Feb 03 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Feb 04 2015 01: +0&quot;,0.804,&quot;13&quot;],[&quot;Feb 05 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Feb 06 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Feb 07 2015 01: +0&quot;,0.03,&quot;16&quot;],[&quot;Feb 08 2015 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Feb 09 2015 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Feb 10 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Feb 11 2015 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Feb 12 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Feb 13 2015 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Feb 14 2015 01: +0&quot;,0.03,&quot;30&quot;],[&quot;Feb 15 2015 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Feb 16 2015 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Feb 17 2015 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Feb 18 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Feb 19 2015 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Feb 20 2015 01: +0&quot;,0.03,&quot;21&quot;],[&quot;Feb 21 2015 01: +0&quot;,0.03,&quot;24&quot;],[&quot;Feb 22 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Feb 23 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Feb 24 2015 01: +0&quot;,0.03,&quot;14&quot;],[&quot;Feb 25 2015 01: +0&quot;,0.033,&quot;12&quot;],[&quot;Feb 26 2015 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Feb 27 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Feb 28 2015 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Mar 01 2015 01: +0&quot;,0.03,&quot;23&quot;],[&quot;Mar 02 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Mar 03 2015 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Mar 04 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Mar 05 2015 01: +0&quot;,0.03,&quot;13&quot;],[&quot;Mar 06 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Mar 07 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Mar 08 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Mar 09 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 10 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Mar 11 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Mar 12 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 13 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Mar 14 2015 01: +0&quot;,0.03,&quot;17&quot;],[&quot;Mar 15 2015 01: +0&quot;,0.03,&quot;15&quot;],[&quot;Mar 16 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Mar 17 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 18 2015 01: +0&quot;,0.031,&quot;3&quot;],[&quot;Mar 19 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Mar 20 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 21 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;Mar 22 2015 01: +0&quot;,0.035,&quot;6&quot;],[&quot;Mar 23 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 24 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Mar 25 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Mar 26 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 27 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Mar 28 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Mar 29 2015 01: +0&quot;,0.033,&quot;12&quot;],[&quot;Mar 30 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Mar 31 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Apr 01 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Apr 02 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Apr 03 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 04 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Apr 05 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 06 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Apr 07 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Apr 08 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 09 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Apr 10 2015 01: +0&quot;,0.03,&quot;4&quot;],[&quot;Apr 11 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Apr 12 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 13 2015 01: +0&quot;,0.334,&quot;7&quot;],[&quot;Apr 14 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 15 2015 01: +0&quot;,0.03,&quot;1&quot;],[&quot;Apr 16 2015 01: +0&quot;,0.03,&quot;2&quot;],[&quot;Apr 17 2015 01: +0&quot;,0.03,&quot;4&quot;],[&quot;Apr 18 2015 01: +0&quot;,0.192,&quot;3&quot;],[&quot;Apr 19 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Apr 20 2015 01: +0&quot;,8.021,&quot;3&quot;],[&quot;Apr 21 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Apr 22 2015 01: +0&quot;,0.03,&quot;4&quot;],[&quot;Apr 23 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Apr 24 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Apr 25 2015 01: +0&quot;,0.03,&quot;2&quot;],[&quot;Apr 26 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 27 2015 01: +0&quot;,0.03,&quot;6&quot;],[&quot;Apr 28 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;Apr 29 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Apr 30 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;May 01 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;May 02 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;May 03 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;May 04 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;May 05 2015 01: +0&quot;,0.03,&quot;4&quot;],[&quot;May 06 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;May 07 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;May 08 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;May 09 2015 01: +0&quot;,0.03,&quot;2&quot;],[&quot;May 10 2015 01: +0&quot;,0.03,&quot;2&quot;],[&quot;May 11 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;May 12 2015 01: +0&quot;,0.03,&quot;3&quot;],[&quot;May 13 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;May 14 2015 01: +0&quot;,2.021,&quot;6&quot;],[&quot;May 15 2015 01: +0&quot;,0.03,&quot;20&quot;],[&quot;May 16 2015 01: +0&quot;,0.03,&quot;43&quot;],[&quot;May 17 2015 01: +0&quot;,0.034,&quot;24&quot;],[&quot;May 18 2015 01: +0&quot;,0.03,&quot;21&quot;],[&quot;May 19 2015 01: +0&quot;,0.038,&quot;10&quot;],[&quot;May 20 2015 01: +0&quot;,0.03,&quot;11&quot;],[&quot;May 21 2015 01: +0&quot;,0.032,&quot;6&quot;],[&quot;May 22 2015 01: +0&quot;,0.036,&quot;4&quot;],[&quot;May 23 2015 01: +0&quot;,0.036,&quot;6&quot;],[&quot;May 24 2015 01: +0&quot;,0.035,&quot;12&quot;],[&quot;May 25 2015 01: +0&quot;,0.032,&quot;5&quot;],[&quot;May 26 2015 01: +0&quot;,0.093,&quot;10&quot;],[&quot;May 27 2015 01: +0&quot;,0.045,&quot;3&quot;],[&quot;May 28 2015 01: +0&quot;,0.031,&quot;8&quot;],[&quot;May 29 2015 01: +0&quot;,0.043,&quot;42&quot;],[&quot;May 30 2015 01: +0&quot;,0.052,&quot;18&quot;],[&quot;May 31 2015 01: +0&quot;,0.046,&quot;9&quot;],[&quot;Jun 01 2015 01: +0&quot;,0.057,&quot;8&quot;],[&quot;Jun 02 2015 01: +0&quot;,0.047,&quot;8&quot;],[&quot;Jun 03 2015 01: +0&quot;,0.285,&quot;10&quot;],[&quot;Jun 04 2015 01: +0&quot;,0.048,&quot;5&quot;],[&quot;Jun 05 2015 01: +0&quot;,2.19,&quot;12&quot;],[&quot;Jun 06 2015 01: +0&quot;,0.04,&quot;11&quot;],[&quot;Jun 07 2015 01: +0&quot;,0.044,&quot;8&quot;],[&quot;Jun 08 2015 01: +0&quot;,0.036,&quot;5&quot;],[&quot;Jun 09 2015 01: +0&quot;,0.04,&quot;8&quot;],[&quot;Jun 10 2015 01: +0&quot;,0.04,&quot;3&quot;],[&quot;Jun 11 2015 01: +0&quot;,0.037,&quot;5&quot;],[&quot;Jun 12 2015 01: +0&quot;,0.033,&quot;8&quot;],[&quot;Jun 13 2015 01: +0&quot;,0.039,&quot;7&quot;],[&quot;Jun 14 2015 01: +0&quot;,0.03,&quot;5&quot;],[&quot;Jun 15 2015 01: +0&quot;,0.03,&quot;10&quot;],[&quot;Jun 16 2015 01: +0&quot;,0.03,&quot;12&quot;],[&quot;Jun 17 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jun 18 2015 01: +0&quot;,0.03,&quot;7&quot;],[&quot;Jun 19 2015 01: +0&quot;,0.03,&quot;9&quot;],[&quot;Jun 20 2015 01: +0&quot;,0.03,&quot;8&quot;],[&quot;Jun 21 2015 03: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 21 2015 17: +0&quot;,0.05,&quot;2&quot;],[&quot;Jun 21 2015 20: +0&quot;,0.04,&quot;1&quot;],[&quot;Jun 21 2015 21: +0&quot;,0.04,&quot;1&quot;],[&quot;Jun 21 2015 22: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 01: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 03: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 04: +0&quot;,0.04,&quot;1&quot;],[&quot;Jun 22 2015 08: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 10: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 11: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 12: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 22 2015 16: +0&quot;,0.037,&quot;1&quot;],[&quot;Jun 22 2015 22: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 01: +0&quot;,0.063,&quot;1&quot;],[&quot;Jun 23 2015 03: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 05: +0&quot;,0.03,&quot;4&quot;],[&quot;Jun 23 2015 09: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 10: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 11: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 12: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 15: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 16: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 17: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 23 2015 20: +0&quot;,0.05,&quot;1&quot;],[&quot;Jun 23 2015 21: +0&quot;,0.05,&quot;3&quot;],[&quot;Jun 24 2015 00: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 24 2015 03: +0&quot;,0.034,&quot;1&quot;],[&quot;Jun 24 2015 04: +0&quot;,0.05,&quot;1&quot;],[&quot;Jun 24 2015 08: +0&quot;,0.05,&quot;1&quot;],[&quot;Jun 24 2015 10: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 24 2015 18: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 24 2015 19: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 24 2015 23: +0&quot;,0.063,&quot;1&quot;],[&quot;Jun 25 2015 04: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 25 2015 06: +0&quot;,0.032,&quot;1&quot;],[&quot;Jun 25 2015 13: +0&quot;,0.036,&quot;2&quot;],[&quot;Jun 25 2015 14: +0&quot;,0.034,&quot;1&quot;],[&quot;Jun 25 2015 15: +0&quot;,0.056,&quot;1&quot;],[&quot;Jun 25 2015 20: +0&quot;,0.035,&quot;2&quot;],[&quot;Jun 26 2015 01: +0&quot;,0.032,&quot;1&quot;],[&quot;Jun 26 2015 04: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 26 2015 08: +0&quot;,0.037,&quot;1&quot;],[&quot;Jun 26 2015 10: +0&quot;,0.039,&quot;1&quot;],[&quot;Jun 26 2015 12: +0&quot;,0.039,&quot;1&quot;],[&quot;Jun 26 2015 21: +0&quot;,2.992,&quot;1&quot;],[&quot;Jun 26 2015 22: +0&quot;,0.06,&quot;1&quot;],[&quot;Jun 27 2015 01: +0&quot;,0.037,&quot;1&quot;],[&quot;Jun 27 2015 04: +0&quot;,0.036,&quot;1&quot;],[&quot;Jun 27 2015 08: +0&quot;,0.04,&quot;1&quot;],[&quot;
+000015CB
+Jun 27 2015 13: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 28 2015 04: +0&quot;,0.03,&quot;2&quot;],[&quot;Jun 28 2015 05: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 28 2015 08: +0&quot;,0.038,&quot;2&quot;],[&quot;Jun 28 2015 11: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 28 2015 14: +0&quot;,0.034,&quot;1&quot;],[&quot;Jun 28 2015 15: +0&quot;,0.03,&quot;2&quot;],[&quot;Jun 28 2015 17: +0&quot;,0.038,&quot;1&quot;],[&quot;Jun 28 2015 21: +0&quot;,0.037,&quot;1&quot;],[&quot;Jun 29 2015 05: +0&quot;,0.034,&quot;1&quot;],[&quot;Jun 29 2015 07: +0&quot;,0.048,&quot;1&quot;],[&quot;Jun 29 2015 10: +0&quot;,0.04,&quot;1&quot;],[&quot;Jun 29 2015 12: +0&quot;,0.039,&quot;1&quot;],[&quot;Jun 29 2015 13: +0&quot;,0.035,&quot;1&quot;],[&quot;Jun 29 2015 15: +0&quot;,0.03,&quot;1&quot;],[&quot;Jun 29 2015 17: +0&quot;,0.031,&quot;1&quot;],[&quot;Jun 29 2015 18: +0&quot;,0.031,&quot;1&quot;],[&quot;Jun 29 2015 20: +0&quot;,0.079,&quot;1&quot;],[&quot;Jun 29 2015 23: +0&quot;,0.04,&quot;1&quot;],[&quot;Jun 30 2015 12: +0&quot;,0.06,&quot;1&quot;],[&quot;Jun 30 2015 18: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 01 2015 09: +0&quot;,0.038,&quot;1&quot;],[&quot;Jul 01 2015 10: +0&quot;,0.04,&quot;1&quot;],[&quot;Jul 01 2015 13: +0&quot;,0.036,&quot;1&quot;],[&quot;Jul 01 2015 15: +0&quot;,0.05,&quot;2&quot;],[&quot;Jul 01 2015 18: +0&quot;,0.043,&quot;2&quot;],[&quot;Jul 01 2015 19: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 02 2015 04: +0&quot;,0.034,&quot;1&quot;],[&quot;Jul 02 2015 08: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 02 2015 10: +0&quot;,0.031,&quot;2&quot;],[&quot;Jul 02 2015 14: +0&quot;,0.066,&quot;1&quot;],[&quot;Jul 03 2015 06: +0&quot;,0.054,&quot;2&quot;],[&quot;Jul 03 2015 07: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 03 2015 13: +0&quot;,0.036,&quot;1&quot;],[&quot;Jul 03 2015 20: +0&quot;,0.038,&quot;1&quot;],[&quot;Jul 04 2015 07: +0&quot;,0.034,&quot;1&quot;],[&quot;Jul 04 2015 09: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 04 2015 10: +0&quot;,0.036,&quot;1&quot;],[&quot;Jul 04 2015 11: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 04 2015 13: +0&quot;,0.042,&quot;1&quot;],[&quot;Jul 04 2015 14: +0&quot;,0.034,&quot;1&quot;],[&quot;Jul 04 2015 15: +0&quot;,0.056,&quot;1&quot;],[&quot;Jul 04 2015 18: +0&quot;,0.031,&quot;1&quot;],[&quot;Jul 04 2015 21: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 05 2015 07: +0&quot;,0.035,&quot;1&quot;],[&quot;Jul 05 2015 08: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 05 2015 10: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 05 2015 13: +0&quot;,0.047,&quot;1&quot;],[&quot;Jul 05 2015 14: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 05 2015 17: +0&quot;,0.03,&quot;4&quot;],[&quot;Jul 05 2015 18: +0&quot;,0.058,&quot;2&quot;],[&quot;Jul 05 2015 22: +0&quot;,0.067,&quot;1&quot;],[&quot;Jul 06 2015 01: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 06 2015 07: +0&quot;,0.045,&quot;1&quot;],[&quot;Jul 06 2015 09: +0&quot;,0.067,&quot;1&quot;],[&quot;Jul 06 2015 11: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 06 2015 12: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 06 2015 14: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 06 2015 17: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 06 2015 18: +0&quot;,0.045,&quot;1&quot;],[&quot;Jul 06 2015 19: +0&quot;,0.045,&quot;1&quot;],[&quot;Jul 06 2015 20: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 06 2015 22: +0&quot;,0.046,&quot;3&quot;],[&quot;Jul 07 2015 07: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 07 2015 08: +0&quot;,0.066,&quot;1&quot;],[&quot;Jul 07 2015 14: +0&quot;,0.035,&quot;1&quot;],[&quot;Jul 07 2015 15: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 07 2015 17: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 07 2015 19: +0&quot;,0.041,&quot;1&quot;],[&quot;Jul 07 2015 20: +0&quot;,0.042,&quot;1&quot;],[&quot;Jul 07 2015 23: +0&quot;,0.076,&quot;1&quot;],[&quot;Jul 08 2015 01: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 08 2015 03: +0&quot;,0.07,&quot;1&quot;],[&quot;Jul 08 2015 06: +0&quot;,0.057,&quot;1&quot;],[&quot;Jul 08 2015 07: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 08 2015 12: +0&quot;,0.087,&quot;1&quot;],[&quot;Jul 09 2015 09: +0&quot;,0.04,&quot;1&quot;],[&quot;Jul 09 2015 10: +0&quot;,0.051,&quot;1&quot;],[&quot;Jul 09 2015 13: +0&quot;,0.058,&quot;1&quot;],[&quot;Jul 09 2015 15: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 09 2015 19: +0&quot;,0.06,&quot;2&quot;],[&quot;Jul 09 2015 20: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 10 2015 10: +0&quot;,0.08,&quot;1&quot;],[&quot;Jul 10 2015 11: +0&quot;,0.088,&quot;1&quot;],[&quot;Jul 10 2015 13: +0&quot;,0.079,&quot;1&quot;],[&quot;Jul 10 2015 19: +0&quot;,0.09,&quot;1&quot;],[&quot;Jul 10 2015 21: +0&quot;,0.071,&quot;1&quot;],[&quot;Jul 11 2015 07: +0&quot;,0.057,&quot;1&quot;],[&quot;Jul 11 2015 14: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 11 2015 18: +0&quot;,0.036,&quot;1&quot;],[&quot;Jul 11 2015 21: +0&quot;,0.041,&quot;1&quot;],[&quot;Jul 11 2015 22: +0&quot;,0.056,&quot;1&quot;],[&quot;Jul 12 2015 09: +0&quot;,0.051,&quot;1&quot;],[&quot;Jul 12 2015 15: +0&quot;,0.041,&quot;1&quot;],[&quot;Jul 12 2015 17: +0&quot;,0.041,&quot;1&quot;],[&quot;Jul 12 2015 18: +0&quot;,0.067,&quot;1&quot;],[&quot;Jul 12 2015 20: +0&quot;,0.054,&quot;2&quot;],[&quot;Jul 13 2015 14: +0&quot;,0.044,&quot;1&quot;],[&quot;Jul 13 2015 18: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 14 2015 05: +0&quot;,0.044,&quot;1&quot;],[&quot;Jul 14 2015 13: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 14 2015 14: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 14 2015 19: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 14 2015 23: +0&quot;,0.035,&quot;1&quot;],[&quot;Jul 15 2015 02: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 15 2015 11: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 15 2015 13: +0&quot;,0.03,&quot;2&quot;],[&quot;Jul 15 2015 15: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 15 2015 16: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 15 2015 18: +0&quot;,0.038,&quot;1&quot;],[&quot;Jul 15 2015 19: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 15 2015 20: +0&quot;,0.066,&quot;1&quot;],[&quot;Jul 15 2015 22: +0&quot;,0.038,&quot;1&quot;],[&quot;Jul 16 2015 05: +0&quot;,0.047,&quot;1&quot;],[&quot;Jul 16 2015 07: +0&quot;,0.035,&quot;1&quot;],[&quot;Jul 16 2015 09: +0&quot;,0.035,&quot;1&quot;],[&quot;Jul 16 2015 11: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 16 2015 12: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 16 2015 14: +0&quot;,0.045,&quot;1&quot;],[&quot;Jul 16 2015 20: +0&quot;,0.202,&quot;2&quot;],[&quot;Jul 16 2015 22: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 17 2015 05: +0&quot;,0.051,&quot;1&quot;],[&quot;Jul 17 2015 08: +0&quot;,0.041,&quot;1&quot;],[&quot;Jul 17 2015 10: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 17 2015 11: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 17 2015 15: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 17 2015 20: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 18 2015 08: +0&quot;,0.03,&quot;2&quot;],[&quot;Jul 18 2015 09: +0&quot;,0.037,&quot;1&quot;],[&quot;Jul 18 2015 10: +0&quot;,0.03,&quot;1&quot;],[&quot;Jul 18 2015 12: +0&quot;,0.034,&quot;1&quot;],[&quot;Jul 18 2015 14: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 18 2015 15: +0&quot;,0.031,&quot;2&quot;],[&quot;Jul 18 2015 16: +0&quot;,0.036,&quot;1&quot;],[&quot;Jul 18 2015 17: +0&quot;,0.042,&quot;1&quot;],[&quot;Jul 18 2015 18: +0&quot;,0.033,&quot;1&quot;],[&quot;Jul 18 2015 19: +0&quot;,0.04,&quot;1&quot;],[&quot;Jul 18 2015 20: +0&quot;,0.04,&quot;1&quot;],[&quot;Jul 19 2015 02: +0&quot;,0.044,&quot;1&quot;],[&quot;Jul 19 2015 07: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 19 2015 13: +0&quot;,0.07,&quot;1&quot;],[&quot;Jul 19 2015 14: +0&quot;,0.037,&quot;1&quot;],[&quot;Jul 19 2015 20: +0&quot;,0.032,&quot;1&quot;],[&quot;Jul 20 2015 03: +0&quot;,0.06,&quot;1&quot;],[&quot;Jul 20 2015 05: +0&quot;,0.048,&quot;1&quot;],[&quot;Jul 20 2015 06: +0&quot;,0.048,&quot;1&quot;],[&quot;Jul 20 2015 07: +0&quot;,0.049,&quot;1&quot;],[&quot;Jul 20 2015 13: +0&quot;,0.046,&quot;1&quot;],[&quot;Jul 20 2015 15: +0&quot;,0.078,&quot;1&quot;],[&quot;Jul 20 2015 17: +0&quot;,0.05,&quot;1&quot;],[&quot;Jul 20 2015 19: +0&quot;,0.054,&quot;1&quot;],[&quot;Jul 20 2015 21: +0&quot;,0.053,&quot;1&quot;]];
 			g_timePriceHistoryEarliest = new Date();
 			if ( line1 != false )
 			{
@@ -528,13 +1005,10 @@ Items will be purchased at the cheapest price available, so the order may end up
 			InstallMarketActionMenuButtons();
 		});
 	
-	$J(document).ready( function(){
-		Market_LoadOrderSpread( 1153117 );
-					ItemActivityTicker.Start( 1153117 );
-			});
 	&lt;/script&gt;
 
 
 &lt;/body&gt;
 &lt;/html&gt;
+
 </span>

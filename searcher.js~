@@ -8,7 +8,7 @@ Searcher = function(searchValue){
 	this.searchValue = searchValue || 'trading card';
 	this.searching = false;
 	this.searchURL = 'http://steamcommunity.com/market/search/render';
-	this.debug = false;
+	this.debug = true;
 
 	this.requestManager = new RequestManager(); //TODO
 	var self = this;

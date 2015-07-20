@@ -38,12 +38,22 @@ Parser.prototype.parseProduct = function(htmlProductPage, productURL){
 		prices.push(listing.total_price);
 	});
 
+	var avgs = average(prices);
+	var avg = avgs.mean;
 	var myProduct = new Product();
 	myProduct.listings = listings;
 	myProduct.url = productURL;
+	myProduct.avgPrice = Number(avg.toFixed(2));
+	myProduct.minPrice = prices[0];
+	myProduct.diffPrice = Number((avg - prices[0]).toFixed(2));
+	myProduct.diffPriceWithoutFee = Number((this.diffPrice - (avg * 0.15)).toFixed(2));
+	var result = this.minPrice / this.avgPrice;
+	myProduct.result = Number(result.toFixed(2));
+	myProduct.averages = avgs;
+
+	console.log(myProduct);
 	this.analyzer.analyze(myProduct);
 
-	//averages, metrics, etc. 
 	
 	function createListing(listingSpan){
 		var listing = {};
