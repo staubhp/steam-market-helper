@@ -8,6 +8,7 @@ Searcher = function(searchValue){
 	this.searchValue = searchValue || 'trading card';
 	this.searching = false;
 	this.searchURL = 'http://steamcommunity.com/market/search/render';
+	this.debug = true;
 
 	this.requestManager = new RequestManager(); //TODO
 	var self = this;
@@ -39,6 +40,7 @@ Searcher.prototype.search = function(pageNumber){
 	}
 	var queryURL = this.searchURL + '?count=' + this.searchParams.pageSize + '&start=' + start + '&query=' + encodeURIComponent(this.searchValue);
 
+	debugger;
 	var requestObj = new RequestObject('GET', queryURL);
 	requestObj.searcher = self;
 	requestObj.parser = self.parser; //TODO:
@@ -46,6 +48,8 @@ Searcher.prototype.search = function(pageNumber){
 		data = JSON.parse(data);
 		if (start == 0){
 			var pages = (data.total_count / this.searcher.searchParams.pageSize);
+			if (self.debug)
+				pages=1;
 			for (var i = 1; i <= pages; i++){
 				this.searcher.search(i);
 			}
@@ -61,5 +65,13 @@ Searcher.prototype.search = function(pageNumber){
 		this.searcher.searching = false;
 
 	};
-	this.requestManager.makeRequest(requestObj);
+	debugger;
+	if (self.debug){
+		var data = $('#searchData').text();
+		requestObj.success(data);
+	}else{
+		this.requestManager.makeRequest(requestObj);
+	}
 }
+
+
