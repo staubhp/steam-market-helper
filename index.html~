@@ -1,4 +1,540 @@
+<script src="jquery-2.1.4.js"></script>
 <script src="searcher.js"></script>
 <script src="parser.js"></script>
+<script src="analyzer.js"></script>
 <script src="request-manager.js"></script>
 <script src="main.js"></script>
+
+
+<span id="searchData">{&quot;success&quot;:true,&quot;start&quot;:0,&quot;pagesize&quot;:10,&quot;total_count&quot;:29647,&quot;results_html&quot;:&quot;\t&lt;div class=\&quot;market_listing_table_header\&quot;&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price market_sortable_column\&quot; data-sorttype=\&quot;price\&quot;&gt;PRICE&lt;span class=\&quot;market_sort_arrow\&quot; style=\&quot;display:none;\&quot;&gt;&lt;\/span&gt;&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings market_sortable_column\&quot; data-sorttype=\&quot;quantity\&quot;&gt;QUANTITY&lt;span class=\&quot;market_sort_arrow\&quot; style=\&quot;display:none;\&quot;&gt;&lt;\/span&gt;&lt;\/div&gt;\r\n\t\t\t\t&lt;div class=\&quot;market_sortable_column\&quot; data-sorttype=\&quot;name\&quot;&gt;&lt;span class=\&quot;market_listing_header_namespacer\&quot;&gt;&lt;\/span&gt;NAME&lt;span class=\&quot;market_sort_arrow\&quot; style=\&quot;display:none;\&quot;&gt;&lt;\/span&gt;&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/352140-Iris%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_0\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_0\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_0_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMFf3CpiSQrcex4NM6b6RfysqSEEXXwbWrBeniKS10-G7RbZjvYqmak5O-QQDzIE-x-RlpQefZR92AdNczfbRA7yt1LrCO6mFZ5GwQXe8hHdwrmzHJANOwjmCMRdZhQyCb3JsDd1A4wYEY-XrzjVrqQPYSnkS4sWxI0Gb5aOtyD_ijt55W9I50\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.00&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;0&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_0_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Iris (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Finders Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/339700-Battle%20Axe%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_1\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_1\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_1_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMFeXuvjSQrcex4NM6b4gTvte6IV1XvbXHNIiDeGQM_GOYPZmyMqzKm7LnCETybFel-EghReaoM92EcbMGOOEdr1YcI8jHo2W5NOVAqfddCdR2Ew3kSNrh4yiBBdMpQniX1LsGK0Vk3aRNvWLnhUuiUa4GtkXonDhNlS6QeYYyX7TuspsDnLPqHRg2XiLY\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.00&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;0&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_1_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Battle Axe (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;I, Gladiator Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/341470-Frigate%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_2\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_2\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_2_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMFfnOsiiQrcex4NM6b5hfypuOZGTL-ZTbDKnyBTAY8TudfPW7Q9jCjtu_GS2qfReF4EAwHfKYMpzIfNMGKOUc81tMM5W-okAJ_EQQsd9d5eQK6zXFOM7khynURI89WyCaicJ3Yh1ZkORQ-CL7uVrXDb4WslnotXh00SvMaMZXV5nL6vprw0t8r8KY\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.00&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;0&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_2_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Frigate (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Loot Hunter Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/312720-Anhk?filter=trading%20card\&quot; id=\&quot;resultlink_3\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_3\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_3_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMFe3CvjyQrcex4NM6b4QvzqqSEEXXwbWqXLXeNHgs4GOUIMjuMqDXx4uiUQD6fSLt5EA5XfKQGpmVJa8iPOxJuysdVrCO6mFZ5GwQXe8hHdwrmnHYRabl8yncRIc0Bnif2JJfZhwlmbBA_W7HhB-iRbIKmxihwVE9mTb5aOtyD_ijtoL1Hn3c\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.54&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;8&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_3_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Anhk&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Khet 2.0 Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/226580-Williams%20Martini%20Racing%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_4\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_4\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_4_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEeHSthSQrcex4NM6b9wz3reuMEWe8RTbWOyjXFRVaHOAHaz_Pp270sriZQ2vKFegvFVsAL_EH9TUcb8_bbkZs1tFa_jK6z0F-Sk4rJJARJF7tzjoZIbpjyi4AIc4Q9n2td8OMiAlrYUduC7zkBbrAbYGkkSxwWEtjTqISbNiW7Cfv_8KjP_HTLvAxMvEp78uAkUBPHklAln4R\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;1.08&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;8&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_4_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Williams Martini Racing (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;F1 2014 Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/226580-Williams%20Martini%20Racing?filter=trading%20card\&quot; id=\&quot;resultlink_5\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_5\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_5_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEeHSthSQrcex4NM6b9wz3reuMEWe8RTbWOyjXFRVaHOAHaz_Pp270sriZQ2vKFegvFVsAL_EH9TUcb8_bbkZs1tFa_jK6z0F-Sk4rJJARJF7tzjoZIbpjyi4AIc4Q9n2td8OMiApkbkFsDrG1A-mTaoWgkC52XRtuGKBMZtqRunC_rZ-ibfKOe_pibPkp78uAkUBPHiXEHqJk\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.00&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;0&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_5_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Williams Martini Racing&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;F1 2014 Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/285960-Coily%20Classic%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_6\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_6\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_6_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEcnehiyQrcex4NM6b4wryrfvGP3j2eyTNLGfQEV9vGL4MPG-M-Tb27biTQT-cQLolFVxRdfMHoTFAbsCOaho61Y5frzPolkclUBw4dYNEfx2_z2YsOLAkzyRPI5wAkHL2d5HZ1FoxPkBjDLviB73APdWjmSkmDxNiF6gdYYyVvi3s-YmxNKCQa_U2FDE-Xn0\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.00&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;0&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_6_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Coily Classic (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Q*bert: Rebooted Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/214610-Harriet%20Sinclair%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_7\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_7\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_7_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b6ATps-uICD_EYTnHIyDQDhhhEOIJYGXa_Gb24L6TRDrIR-ovEg1QdKsN8DVBPsuIOBZsgYBd_DO6xEYqShVxPNVId0m5xWYXNK8awSwTIs5fnHaiJ5DdhFxrakA-WryxVujGatekxiciX0tnGahONtrB7iW4rpelP-nGc68hIvw2lpYZpW4\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;8.40&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;2&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_7_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Harriet Sinclair (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Cherry Tree High Comedy Club Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/284140-A%20Spook?filter=trading%20card\&quot; id=\&quot;resultlink_8\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_8\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_8_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEcnapiSQrcex4NM6b4U7Ise2CFzL-ZTbDKnyOSV06SeUKYDqM_2Kh4eyWEWqYF-kvEQgEf6EC92BLa5yNaRts09Na5XW2kAJ_EQQsd9d5eQK6zXFON7hznnJLIchVyCCjIpDZgVw0a05oD73mVL3EatChmCt2WRwzTqMdY5XV5nL6vprwxpqagB0\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;0.24&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;18&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_8_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;A Spook&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Majestic Nights Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n\r\n&lt;a class=\&quot;market_listing_row_link\&quot; href=\&quot;http:\/\/steamcommunity.com\/market\/listings\/753\/214610-Curtis%20Campbell%20%28Foil%29?filter=trading%20card\&quot; id=\&quot;resultlink_9\&quot;&gt;\r\n\t&lt;div class=\&quot;market_listing_row market_recent_listing_row market_listing_searchresult\&quot; id=\&quot;result_9\&quot;&gt;\r\n\t\t\t\t&lt;img id=\&quot;result_9_image\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/economy\/image\/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b4xDpteueV1f2ZSfGKi3VWldlHOQLOD2N_zvz576USz-bR-0pEA9VKaQFpmMYac6LOUZph9UPr2a9wRcoG0NmYstBNg202HAWI4IsxSAVIJZXy3bxIpDYhlZgbhJqXu7nArjHOYDzmCkmDBphF_RINd_DuHG6-MOkdLfYeu5xafBQgnyiDw\/62fx62f\&quot; style=\&quot;\&quot; class=\&quot;market_listing_item_img\&quot; alt=\&quot;\&quot; \/&gt;\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_their_price\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\tStarting at:&lt;br\/&gt;\r\n\t\t\t\t&lt;span style=\&quot;color:white\&quot;&gt;&amp;#36;1.99&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_down\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t\t&lt;span class=\&quot;market_arrow_up\&quot; style=\&quot;display: none\&quot;&gt;&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t&lt;div class=\&quot;market_listing_right_cell market_listing_num_listings\&quot;&gt;\r\n\t\t\t&lt;span class=\&quot;market_table_value\&quot;&gt;\r\n\t\t\t\t&lt;span class=\&quot;market_listing_num_listings_qty\&quot;&gt;7&lt;\/span&gt;\r\n\t\t\t&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t\t\r\n\t\t\t\t&lt;div class=\&quot;market_listing_item_name_block\&quot;&gt;\r\n\t\t\t&lt;span id=\&quot;result_9_name\&quot; class=\&quot;market_listing_item_name\&quot; style=\&quot;color: #;\&quot;&gt;Curtis Campbell (Foil)&lt;\/span&gt;\r\n\t\t\t&lt;br\/&gt;\r\n\t\t\t&lt;span class=\&quot;market_listing_game_name\&quot;&gt;Cherry Tree High Comedy Club Foil Trading Card&lt;\/span&gt;\r\n\t\t&lt;\/div&gt;\r\n\t&lt;\/div&gt;\r\n&lt;\/a&gt;\r\n&quot;}
+</span>
+
+<span id="productData">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;title&gt;Steam Community Market :: Listings for 214610-Curtis Campbell (Foil)&lt;/title&gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=F3z3QpekjE2f&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/buttons.css?v=RPKVppE7GyO7&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/shared_global.css?v=CB2oVr7MXkuE&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/globalv2.css?v=ZGVsQ5tURLf1&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/modalContent.css?v=.3ZY4VGdKrzFz&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/economy.css?v=KhJxplnpbd14&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/economy_market.css?v=P4B7jpmJ6Q5X&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/html5.css?v=.MtSlvoLZL0Tb&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/shared/css/motiva_sans.css?v=F3z3QpekjE2f&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;link href=&quot;http://steamcommunity-a.akamaihd.net/public/css/skin_1/header.css?v=quvm2wU5yG0p&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; &gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/prototype-1.7.js?v=.55t44gwuwgvw&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/scriptaculous/_combined.js?v=9XVsa_Ni33oN&amp;amp;l=english&amp;amp;load=effects,controls,slider,dragdrop&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/global.js?v=hCxPThA3-aeH&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jquery-1.11.1.min.js?v=.isFTSRckeNhC&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/shared/javascript/tooltip.js?v=.BEle7nTilzRg&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=-F_6tnOi2iBG&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;$J = jQuery.noConflict();
+if ( typeof JSON != 'object' || !JSON.stringify || !JSON.parse ) { document.write( &quot;&lt;scr&quot; + &quot;ipt type=\&quot;text\/javascript\&quot; src=\&quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/json2.js?v=pmScf4470EZP&amp;amp;l=english\&quot;&gt;&lt;\/script&gt;\n&quot; ); };
+&lt;/script&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/economy_common.js?v=1LohOdoSLPYI&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/economy.js?v=9q2_OcH3X1DF&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/market.js?v=7kIRw3viSu_l&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/modalv2.js?v=HsicoS9FYYTz&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/modalContent.js?v=6_oy0yOh6DLf&amp;amp;l=english&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/jquery.jqplot.min.js?v=.MtKHlYxlI0Rv&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/plugins/jqplot.cursor.min.js?v=.M2KHp3--unVY&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/plugins/jqplot.dateAxisRenderer.min.js?v=.4qfJsdWiq0OT&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/javascript/jqplot/plugins/jqplot.highlighter.min.js?v=.bt1BStJ5PY3c&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33779068-1']);
+  _gaq.push(['_setSampleRate', '0.4']);
+  _gaq.push(['_setCustomVar', 1, 'Logged In', 'false', 2]);
+  _gaq.push(['_setCustomVar', 2, 'Client Type', 'External', 2]);
+  _gaq.push(['_setCustomVar', 3, 'Cntrlr', 'market', 3]);
+  _gaq.push(['_setCustomVar', 4, 'Method', &quot;market\/listings&quot;, 3]);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setSessionCookieTimeout', 900000]);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style=&quot;width: 100%; text-align: center&quot;&gt;
+&lt;!-- header bar, contains info browsing user if logged in --&gt;
+
+	&lt;div id=&quot;global_header&quot;&gt;
+		&lt;div class=&quot;content&quot;&gt;
+
+			&lt;div class=&quot;logo&quot;&gt;
+				&lt;span id=&quot;logo_holder&quot;&gt;
+					&lt;a href=&quot;http://store.steampowered.com/&quot;&gt;
+						&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/header/globalheader_logo.png&quot; width=&quot;176&quot; height=&quot;44&quot; border=&quot;0&quot; alt=&quot;Steam Logo&quot; /&gt;
+					&lt;/a&gt;
+				&lt;/span&gt;
+				&lt;!--[if lt IE 7]&gt;
+				&lt;style type=&quot;text/css&quot;&gt;
+				#logo_holder img { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+				#logo_holder { display: inline-block; width: 176px; height: 44px; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://steamcommunity-a.akamaihd.net/public/images/header/globalheader_logo.png'); }
+				&lt;/style&gt;
+				&lt;![endif]--&gt;
+			&lt;/div&gt;
+
+				&lt;div class=&quot;supernav_container&quot;&gt;
+	&lt;a class=&quot;menuitem supernav&quot; href=&quot;http://store.steampowered.com/&quot; data-tooltip-type=&quot;selector&quot; data-tooltip-content=&quot;.submenu_store&quot;&gt;
+		STORE	&lt;/a&gt;
+	&lt;div class=&quot;submenu_store&quot; style=&quot;display: none;&quot; data-submenuid=&quot;store&quot;&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://store.steampowered.com/&quot;&gt;Featured&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://store.steampowered.com/explore/&quot;&gt;Explore&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://store.steampowered.com/curators/&quot;&gt;Curators&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/my/wishlist/&quot;&gt;Wishlist&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://store.steampowered.com/news/&quot;&gt;News&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://store.steampowered.com/stats/&quot;&gt;Stats&lt;/a&gt;
+	&lt;/div&gt;
+
+
+	&lt;a class=&quot;menuitem supernav&quot; style=&quot;display: block&quot; href=&quot;http://steamcommunity.com/&quot; data-tooltip-type=&quot;selector&quot; data-tooltip-content=&quot;.submenu_community&quot;&gt;
+		COMMUNITY	&lt;/a&gt;
+	&lt;div class=&quot;submenu_community&quot; style=&quot;display: none;&quot; data-submenuid=&quot;community&quot;&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/&quot;&gt;Home&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/discussions/&quot;&gt;Discussions&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/workshop/&quot;&gt;Workshop&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/greenlight/&quot;&gt;Greenlight&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/market/&quot;&gt;Market&lt;/a&gt;
+		&lt;a class=&quot;submenuitem&quot; href=&quot;http://steamcommunity.com/?subsection=broadcasts&quot;&gt;Broadcasts&lt;/a&gt;
+					&lt;/div&gt;
+
+	
+
+	
+	&lt;a class=&quot;menuitem responsive_hidden&quot; href=&quot;http://store.steampowered.com/about/&quot;&gt;
+		ABOUT	&lt;/a&gt;
+
+	&lt;a class=&quot;menuitem responsive_hidden&quot; href=&quot;https://help.steampowered.com/&quot;&gt;
+		SUPPORT	&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;script type=&quot;text/javascript&quot;&gt;
+		jQuery(document).ready(function($) {
+			$('.tooltip').v_tooltip();
+			$('#global_header .supernav').v_tooltip({'location':'bottom', 'tooltipClass': 'supernav_content', 'offsetY':-4, 'offsetX': 1, 'horizontalSnap': 4, 'tooltipParent': '#global_header .supernav_container', 'correctForScreenSize': false});
+		});
+	&lt;/script&gt;
+
+			&lt;div id=&quot;global_actions&quot;&gt;
+								&lt;div id=&quot;global_action_menu&quot;&gt;
+
+					&lt;div class=&quot;header_installsteam_btn header_installsteam_btn_green&quot;&gt;
+						&lt;div class=&quot;header_installsteam_btn_leftcap&quot;&gt;&lt;/div&gt;
+						&lt;div class=&quot;header_installsteam_btn_rightcap&quot;&gt;&lt;/div&gt;
+						&lt;a class=&quot;header_installsteam_btn_content&quot; href=&quot;http://store.steampowered.com/about/&quot;&gt;
+							Install Steam						&lt;/a&gt;
+					&lt;/div&gt;
+
+																							&lt;a class=&quot;global_action_link&quot; href=&quot;https://steamcommunity.com/login/home/?goto=market%2Flistings%2F753%2F214610-Curtis+Campbell+%28Foil%29%3Fcc%3Dus&quot;&gt;Login&lt;/a&gt;
+							&amp;nbsp;|&amp;nbsp;
+												&lt;span class=&quot;pulldown global_action_link&quot; id=&quot;language_pulldown&quot; onclick=&quot;ShowMenu( this, 'language_dropdown', 'right' );&quot;&gt;language&lt;/span&gt;
+						&lt;div class=&quot;popup_block&quot; id=&quot;language_dropdown&quot; style=&quot;display: none;&quot;&gt;
+							&lt;div class=&quot;shadow_ul&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_top&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_ur&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_left&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_right&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_bl&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_bottom&quot;&gt;&lt;/div&gt;&lt;div class=&quot;shadow_br&quot;&gt;&lt;/div&gt;							&lt;div class=&quot;popup_body popup_menu shadow_content&quot;&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=bulgarian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'bulgarian' ); return false;&quot;&gt;&#1041;&#1098;&#1083;&#1075;&#1072;&#1088;&#1089;&#1082;&#1080; (Bulgarian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=czech&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'czech' ); return false;&quot;&gt;&#269;e&scaron;tina (Czech)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=danish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'danish' ); return false;&quot;&gt;Dansk (Danish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=dutch&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'dutch' ); return false;&quot;&gt;Nederlands (Dutch)&lt;/a&gt;
+																																			&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=finnish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'finnish' ); return false;&quot;&gt;Suomi (Finnish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=french&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'french' ); return false;&quot;&gt;Fran&ccedil;ais (French)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=german&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'german' ); return false;&quot;&gt;Deutsch (German)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=greek&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'greek' ); return false;&quot;&gt;&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;&#940; (Greek)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=hungarian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'hungarian' ); return false;&quot;&gt;Magyar (Hungarian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=italian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'italian' ); return false;&quot;&gt;Italiano (Italian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=japanese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'japanese' ); return false;&quot;&gt;&#26085;&#26412;&#35486; (Japanese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=koreana&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'koreana' ); return false;&quot;&gt;&#54620;&#44397;&#50612; (Korean)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=norwegian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'norwegian' ); return false;&quot;&gt;Norsk (Norwegian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=polish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'polish' ); return false;&quot;&gt;Polski (Polish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=portuguese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'portuguese' ); return false;&quot;&gt;Portugu&ecirc;s (Portuguese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=brazilian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'brazilian' ); return false;&quot;&gt;Portugu&ecirc;s-Brasil (Portuguese-Brazil)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=romanian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'romanian' ); return false;&quot;&gt;Rom&acirc;n&#259; (Romanian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=russian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'russian' ); return false;&quot;&gt;&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; (Russian)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=schinese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'schinese' ); return false;&quot;&gt;&#31616;&#20307;&#20013;&#25991; (Simplified Chinese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=spanish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'spanish' ); return false;&quot;&gt;Espa&ntilde;ol (Spanish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=swedish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'swedish' ); return false;&quot;&gt;Svenska (Swedish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=tchinese&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'tchinese' ); return false;&quot;&gt;&#32321;&#39636;&#20013;&#25991; (Traditional Chinese)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=thai&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'thai' ); return false;&quot;&gt;&#3652;&#3607;&#3618; (Thai)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=turkish&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'turkish' ); return false;&quot;&gt;T&uuml;rk&ccedil;e (Turkish)&lt;/a&gt;
+																										&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;?l=ukrainian&amp;cc=us&quot; onclick=&quot;ChangeLanguage( 'ukrainian' ); return false;&quot;&gt;&#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072; (Ukrainian)&lt;/a&gt;
+																&lt;a class=&quot;popup_menu_item tight&quot; href=&quot;http://translation.steampowered.com&quot; target=&quot;_blank&quot;&gt;Help us translate Steam&lt;/a&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+									&lt;/div&gt;
+			&lt;/div&gt;
+			
+			
+			
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+
+
+&lt;div id=&quot;modalBG&quot; style=&quot;display: none&quot;&gt;&lt;/div&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+	g_sessionID = &quot;c0935c6619e6340ead9b6ad5&quot;;
+	g_steamID = false;
+
+	$J( function() {
+		InitMiniprofileHovers();
+		InitEmoticonHovers();
+		window.BindCommunityTooltip = function( $Selector ) { $Selector.v_tooltip( {'tooltipClass': 'community_tooltip', 'dataName': 'communityTooltip' } ); };
+		BindCommunityTooltip( $J('[data-community-tooltip]') );
+	});
+
+	$J( function() { InitEconomyHovers( &quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/css\/skin_1\/economy.css?v=KhJxplnpbd14&quot;, &quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/economy_common.js?v=1LohOdoSLPYI&amp;l=english&quot;, &quot;http:\/\/steamcommunity-a.akamaihd.net\/public\/javascript\/economy.js?v=9q2_OcH3X1DF&amp;l=english&quot; );});&lt;/script&gt;&lt;!-- /header bar --&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;NotLoggedInWarning&quot; class=&quot;modal_frame&quot; style=&quot;display: none&quot;&gt;
+	&lt;div class=&quot;modal_box&quot;&gt;
+		&lt;div class=&quot;modal_box_ctn&quot;&gt;
+			&lt;div class=&quot;notLoggedInText&quot;&gt;You need to sign in or create an account to do that.&lt;/div&gt;
+			&lt;div class=&quot;notLoggedInButtons&quot;&gt;
+				&lt;a class=&quot;btn_green_white_innerfade btn_medium&quot; href=&quot;https://steamcommunity.com/login/home/?goto=market%2Flistings%2F753%2F214610-Curtis%2520Campbell%2520%2528Foil%2529%3Fcc%3Dus&quot;&gt;&lt;span&gt;Sign In&lt;/span&gt;&lt;/a&gt;
+				&lt;a class=&quot;btn_green_white_innerfade btn_medium&quot; href=&quot;http://store.steampowered.com/join&quot;&gt;&lt;span&gt;Create an Account&lt;/span&gt;&lt;/a&gt;
+				&lt;a class=&quot;btn_grey_black btn_medium&quot; onclick=&quot;hideModal( 'NotLoggedInWarning' )&quot;&gt;&lt;span&gt;Cancel&lt;/span&gt;&lt;/a&gt;
+				&lt;div style=&quot;clear: left&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;pagecontent no_header &quot;&gt;
+&lt;!-- top content --&gt;
+&lt;div id=&quot;modalContentScrollbarHack&quot; style=&quot;display: none&quot;&gt;&lt;/div&gt;
+
+&lt;div id=&quot;modalContent&quot; class=&quot;modal_frame&quot; style=&quot;display: none&quot;&gt;
+	&lt;div id=&quot;modalContentTitleBar&quot;&gt;
+		&lt;a id=&quot;modalContentTitleBarLink&quot; href=&quot;&quot; target=&quot;_blank&quot;&gt;&amp;nbsp;&lt;/a&gt;
+		&lt;a id=&quot;modalContentTitleBarImageLink&quot; href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/skin_1/ico_external_link.gif&quot; alt=&quot;&quot;&gt;&lt;/a&gt;
+		&lt;div id=&quot;modalContentDismiss&quot; class=&quot;modalContentDismissImage&quot; onclick=&quot;HideModalContent();&quot;&gt;
+			&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/x9x9.gif&quot; width=&quot;9&quot; height=&quot;9&quot; border=&quot;0&quot; alt=&quot;Close&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id=&quot;modalContentWait&quot;&gt;&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Loading&quot;&gt;&lt;/div&gt;
+	&lt;div id=&quot;modalContentFrameContainer&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;div id=&quot;BG_top&quot;&gt;
+	&lt;h1 class=&quot;market_header_title&quot;&gt;
+		&lt;a href=&quot;http://steamcommunity.com/market/&quot;&gt;
+			&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/economy/market/header/header_en.png&quot; alt=&quot;Steam Community Market&quot; /&gt;
+		&lt;/a&gt;
+	&lt;/h1&gt;
+		&lt;div class=&quot;market_header_hidden&quot;&gt;
+		&lt;p&gt;Buy and sell items with community members for Steam Wallet funds.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;&lt;!-- /top content --&gt;
+&lt;!-- main body --&gt;
+&lt;div id=&quot;BG_bottom&quot;&gt;
+	&lt;div id=&quot;mainContents&quot;&gt;
+		&lt;div class=&quot;market_listing_nav_container&quot;&gt;
+						&lt;div class=&quot;market_listing_nav&quot;&gt;
+									&lt;a href=&quot;http://steamcommunity.com/market/search?appid=753&quot;&gt;Steam&lt;/a&gt;
+					&amp;gt;
+											&lt;a href=&quot;http://steamcommunity.com/market/search?appid=753&amp;amp;category_753_Game[]=tag_app_214610&quot;&gt;Cherry Tree High Comedy Club Community Items&lt;/a&gt;
+						&amp;gt;
+										&lt;a href=&quot;http://steamcommunity.com/market/listings/753/214610-Curtis%20Campbell%20%28Foil%29&quot;&gt;Shinnosuke Kamikata (Foil)&lt;/a&gt;
+							&lt;/div&gt;
+		&lt;/div&gt;
+				&lt;div class=&quot;market_page_fullwidth market_listing_firstsection&quot;&gt;
+			&lt;div class=&quot;market_listing_iteminfo&quot;&gt;
+				&lt;div class=&quot;market_listing_largeimage&quot;&gt;
+        &lt;img src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A/360fx360f&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+&lt;div id=&quot;largeiteminfo&quot;&gt;
+    &lt;div class=&quot;inventory_iteminfo hover_box&quot; id=&quot;largeiteminfo_clienthover&quot;&gt;
+        &lt;div class=&quot;item_desc_content&quot; id=&quot;largeiteminfo_content&quot;&gt;
+            &lt;div class=&quot;item_desc_icon&quot;&gt;
+                &lt;div class=&quot;item_desc_icon_center&quot;&gt;
+                    &lt;img id=&quot;largeiteminfo_item_icon&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/images/trans.gif&quot; alt=&quot;&quot; /&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;item_desc_description&quot;&gt;
+                &lt;h1 class=&quot;hover_item_name&quot; id=&quot;largeiteminfo_item_name&quot;&gt;&lt;/h1&gt;
+                &lt;div class=&quot;fraud_warning&quot; id=&quot;largeiteminfo_fraud_warnings&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;item_desc_game_info&quot; id=&quot;largeiteminfo_game_info&quot;&gt;
+                    &lt;div class=&quot;item_desc_game_icon&quot;&gt;
+                        &lt;img id=&quot;largeiteminfo_game_icon&quot; src=&quot;http://steamcommunity-a.akamaihd.net/public/images/trans.gif&quot; alt=&quot;&quot; /&gt;
+                    &lt;/div&gt;
+                    &lt;div id=&quot;largeiteminfo_game_name&quot; class=&quot;ellipsis&quot;&gt;&lt;/div&gt;
+                    &lt;div id=&quot;largeiteminfo_item_type&quot; class=&quot;&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item_desc_descriptors&quot; id=&quot;largeiteminfo_item_descriptors&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item_actions&quot; id=&quot;largeiteminfo_item_actions&quot;&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;item_desc_descriptors&quot; id=&quot;largeiteminfo_item_owner_descriptors&quot;&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+
+								&lt;div class=&quot;market_commodity_order_block&quot;&gt;
+					&lt;div class=&quot;market_commodity_explanation&quot;&gt;
+						This item is a commodity, where all the individual items are effectively identical. Individual listings aren't accessible; you can instead issue orders to buy at a specific price, with the cheapest listing getting automatically matched to the highest buy order. &lt;a href='#' style=&quot;display:none&quot;&gt;Read more about buy orders.&lt;/a&gt;
+					&lt;/div&gt;
+											&lt;div class=&quot;market_commodity_explanation&quot;&gt;
+							After purchase, this item:							&lt;ul&gt;
+																	&lt;li&gt;will not be tradable for one week&lt;/li&gt;
+																									&lt;li&gt;cannot be listed on the Steam Community Market for one week&lt;/li&gt;
+															&lt;/ul&gt;
+						&lt;/div&gt;
+										&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+					&lt;div id=&quot;market_commodity_order_spread&quot;&gt;
+						&lt;div class=&quot;market_commodity_orders_block&quot;&gt;
+							&lt;div class=&quot;market_commodity_orders_interior&quot;&gt;
+								&lt;div class=&quot;market_commodity_orders_header&quot;&gt;
+									&lt;div class=&quot;market_commodity_order_summary&quot; id=&quot;market_commodity_forsale&quot; &gt;
+									&lt;/div&gt;
+									&lt;a class=&quot;btn_green_white_innerfade btn_medium market_commodity_buy_button&quot; href=&quot;javascript:void(0)&quot; onclick=&quot;Market_ShowBuyOrderPopup( 753, &amp;quot;214610-Curtis Campbell (Foil)&amp;quot;, &amp;quot;Shinnosuke Kamikata (Foil)&amp;quot; ); return false;&quot;&gt;
+										&lt;span&gt;Buy...&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/div&gt;
+								&lt;div id=&quot;market_commodity_forsale_table&quot; class=&quot;market_commodity_orders_table_container&quot;&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+													&lt;/div&gt;
+						&lt;div class=&quot;market_commodity_orders_block&quot;&gt;
+							&lt;div class=&quot;market_commodity_orders_interior&quot;&gt;
+								&lt;div class=&quot;market_commodity_orders_header&quot;&gt;
+									&lt;div class=&quot;market_commodity_order_summary&quot; id=&quot;market_commodity_buyrequests&quot;&gt;
+									&lt;/div&gt;
+									&lt;a class=&quot;btn_green_white_innerfade btn_medium market_commodity_buy_button&quot; href=&quot;javascript:void(0)&quot; onclick=&quot;ShowModalContent('http://steamcommunity.com/my/inventory/?modal=1&amp;amp;market=1#753', 'Choose an item from your inventory', 'http://steamcommunity.com/my/inventory/#753', false); return false;&quot;&gt;
+										&lt;span&gt;Sell...&lt;/span&gt;
+									&lt;/a&gt;
+								&lt;/div&gt;
+								&lt;div id=&quot;market_commodity_buyreqeusts_table&quot; class=&quot;market_commodity_orders_table_container&quot;&gt;
+								&lt;/div&gt;
+							&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;market_activity_section&quot;&gt;
+					&lt;h3 class=&quot;market_activity_header&quot;&gt;Recent activity&lt;/h3&gt;
+					&lt;div id=&quot;market_activity_block&quot;&gt;
+						&lt;div id=&quot;market_activity_waiting_text&quot;&gt;Waiting for new activity...&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+								&lt;hr&gt;
+				&lt;div id=&quot;myListings&quot; style=&quot;border: none&quot;&gt;
+									&lt;/div&gt;
+				&lt;hr&gt;
+
+									&lt;div id=&quot;pricehistory&quot;&gt;&lt;/div&gt;
+					&lt;br&gt;
+					&lt;div class=&quot;zoom_controls pricehistory_zoom_controls&quot;&gt;
+						Zoom graph						&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomDays( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest, 7 );&quot; href=&quot;javascript:void(0)&quot;&gt;Week&lt;/a&gt;
+						&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomDays( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest, 30 );&quot; href=&quot;javascript:void(0)&quot;&gt;Month&lt;/a&gt;
+						&lt;a class=&quot;zoomopt&quot; onclick=&quot;return pricehistory_zoomLifetime( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest );&quot; href=&quot;javascript:void(0)&quot; style=&quot;padding-right: 0&quot;&gt;Lifetime&lt;/a&gt;
+					&lt;/div&gt;
+								&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+				&lt;hr&gt;
+				&lt;div id=&quot;orders_histogram&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
+
+	&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;
+&lt;div id=&quot;market_action_popup&quot; class=&quot;popup_block_new&quot; style=&quot;display: none;&quot;&gt;
+	&lt;div class=&quot;popup_body popup_menu&quot;&gt;
+		&lt;div id=&quot;market_action_popup_itemactions&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- footer --&gt;
+	&lt;div id=&quot;footer_spacer&quot;&gt;&lt;/div&gt;
+	&lt;div id=&quot;footer&quot;&gt;
+		&lt;div class=&quot;footer_content&quot;&gt;
+			&lt;span id=&quot;footerLogo&quot;&gt;&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/skin_1/footerLogo_valve.png?v=1&quot; width=&quot;96&quot; height=&quot;26&quot; border=&quot;0&quot; alt=&quot;Valve Logo&quot; /&gt;&lt;/span&gt;
+			&lt;span id=&quot;footerText&quot;&gt;
+				&amp;copy; Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.&lt;br/&gt;Some geospatial data on this website is provided by &lt;a target=&quot;_blank&quot; href=&quot;https://steamcommunity.com/linkfilter/?url=http://www.geonames.org&quot;&gt;geonames.org&lt;/a&gt;.				&lt;br&gt;
+									&lt;span class=&quot;valve_links&quot;&gt;
+						&lt;a href=&quot;http://store.steampowered.com/privacy_agreement/&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;
+						&amp;nbsp; | &amp;nbsp;&lt;a href=&quot;http://www.valvesoftware.com/legal.htm&quot; target=&quot;_blank&quot;&gt;Legal&lt;/a&gt;
+						&amp;nbsp;| &amp;nbsp;&lt;a href=&quot;http://store.steampowered.com/subscriber_agreement/&quot; target=&quot;_blank&quot;&gt;Steam Subscriber Agreement&lt;/a&gt;
+					&lt;/span&gt;
+											
+							&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- /footer --&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+var g_bLoggedIn = false;
+var g_strCountryCode = &quot;US&quot;;
+var g_strLanguage = &quot;english&quot;;
+
+g_bModalModifyAnchorTargets = false;
+g_bModalCacheContent = false;
+&lt;/script&gt;&lt;div id=&quot;market_removelisting_dialog&quot; class=&quot;market_modal_dialog&quot; style=&quot;display: none;&quot;&gt;
+	&lt;div class=&quot;market_dialog_title&quot;&gt;
+		&lt;span id=&quot;market_removelisting_dialog_title&quot;&gt;
+			Remove a listing		&lt;/span&gt;
+		&lt;span class=&quot;market_dialog_cancel&quot;&gt;
+			&lt;a id=&quot;market_removelisting_dialog_cancel&quot; href=&quot;#&quot; class=&quot;market_dialog_title_cancel&quot;&gt;Cancel&lt;span class=&quot;market_dialog_title_cancel_X&quot;&gt;X&lt;/span&gt;&lt;/a&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div id=&quot;market_removelisting_dialog_contents&quot; class=&quot;market_dialog_contents&quot;&gt;
+		&lt;div id=&quot;market_removelisting_dialog_confirmation&quot;&gt;
+			&lt;div&gt;
+				Remove the listing for 
+000023F2
+&lt;span id=&quot;market_removelisting_dialog_itemname&quot;&gt;&lt;/span&gt; and return the item to your inventory?			&lt;/div&gt;
+			&lt;br/&gt;
+			&lt;div id=&quot;market_removelisting_dialog_buttons&quot;&gt;
+				&lt;div id=&quot;market_removelisting_dialog_accept_throbber&quot; style=&quot;display: none;&quot;&gt;
+					&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Working...&quot;&gt;
+				&lt;/div&gt;
+				&lt;a id=&quot;market_removelisting_dialog_accept&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide&quot;&gt;&lt;span&gt;Remove Listing&lt;/span&gt;&lt;/a&gt;
+				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div id=&quot;market_removelisting_dialog_error&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;&lt;div id=&quot;market_buy_commodity_popup&quot; style=&quot;display: none;&quot;&gt;
+	&lt;div class=&quot;popup_body popup_menu&quot;&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_buy_commodity_item_display&quot;&gt;
+		&lt;div class=&quot;market_listing_item_img_container&quot;&gt;
+			&lt;img id=&quot;mypurchase_0_image&quot; src=&quot;http://steamcommunity-a.akamaihd.net/economy/image/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A/62fx62f&quot; style=&quot;&quot; class=&quot;market_listing_item_img&quot; alt=&quot;&quot; /&gt;		&lt;/div&gt;
+		&lt;div class=&quot;market_listing_item_name_block&quot;&gt;
+			&lt;span class=&quot;market_listing_item_name&quot; style=&quot;&quot;&gt;Shinnosuke Kamikata (Foil)&lt;/span&gt;&lt;br/&gt;
+			&lt;span class=&quot;market_listing_game_name&quot;&gt;Cherry Tree High Comedy Club Foil Trading Card&lt;/span&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;market_buy_commodity_input_block&quot;&gt;
+		&lt;div class=&quot;market_buy_commodity_popup_left_block&quot;&gt;
+			&lt;div class=&quot;market_buy_commodity_input_label&quot;&gt;What price do you want to pay:&lt;/div&gt;
+			&lt;div class=&quot;market_buy_commodity_input_label&quot;&gt;How many do you want to buy:&lt;/div&gt;
+			&lt;div class=&quot;market_buy_commodity_input_label&quot;&gt;Maximum price &lt;span class=&quot;market_whatsthis&quot; title=&quot;This is the most you can end up spending as a result of this buy order.
+Items will be purchased at the cheapest price available, so the order may end up costing less than this amount.&quot;&gt;(?)&lt;/span&gt;:&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;market_buy_commodity_popup_right_block&quot;&gt;
+			&lt;div&gt;&lt;input type=&quot;text&quot; id=&quot;market_buy_commodity_input_price&quot; name=&quot;input_price&quot;&gt; (per item)&lt;/div&gt;
+			&lt;div&gt;&lt;input type=&quot;text&quot; id=&quot;market_buy_commodity_input_quantity&quot; name=&quot;input_quantity&quot; value=&quot;1&quot;&gt;&lt;/div&gt;
+			&lt;div id=&quot;market_buy_commodity_order_total&quot;&gt;&amp;nbsp;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+
+	&lt;div id=&quot;market_buynow_dialog_paymentinfo_frame_container&quot;&gt;
+		&lt;div id=&quot;market_buynow_dialog_paymentinfo_frame&quot; class=&quot;market_dialog_content_frame&quot;&gt;
+			&lt;div id=&quot;market_buynow_dialog_paymentinfo&quot; class=&quot;market_dialog_content market_dialog_content_darker&quot;&gt;
+				&lt;div&gt;
+					&lt;div id=&quot;market_buynow_dialog_paymentinfo_option_labels&quot;&gt;
+						&lt;span&gt;Payment method:&lt;/span&gt;
+						&lt;br/&gt;
+						&lt;br/&gt;
+						&lt;span&gt;Steam account:&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;div&gt;
+						&lt;span id=&quot;market_buynow_dialog_paymentmethod&quot;&gt;My Steam Wallet &lt;span id=&quot;market_buynow_dialog_walletbalance&quot;&gt;(&lt;span id=&quot;market_buynow_dialog_walletbalance_amount&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;
+						&lt;br/&gt;
+						&lt;br/&gt;
+						&lt;span id=&quot;market_buynow_dialog_myaccountname&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;market_buynow_dialog_paymentinfo_bottomactions&quot;&gt;
+					&lt;a id=&quot;market_buynow_dialog_purchase&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide btn_uppercase&quot; style=&quot;display: none&quot;&gt;&lt;span&gt;PLACE ORDER&lt;/span&gt;&lt;/a&gt;
+					&lt;a id=&quot;market_buynow_dialog_addfunds&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide btn_uppercase&quot;&gt;&lt;span&gt;Add Funds&lt;/span&gt;&lt;/a&gt;
+					&lt;div id=&quot;market_buynow_dialog_accept_ssa_container&quot;&gt;
+						&lt;br/&gt;
+						&lt;input id=&quot;market_buynow_dialog_accept_ssa&quot; type=&quot;checkbox&quot; value=&quot;0&quot; name=&quot;accept_ssa&quot;&gt;
+						&lt;label id=&quot;market_buynow_dialog_accept_ssa_label&quot; for=&quot;market_buynow_dialog_accept_ssa&quot;&gt;I agree to the terms of the &lt;a href=&quot;javascript:SSAPopup();&quot; class=&quot;body_link&quot; &gt;Steam Subscriber Agreement&lt;/a&gt; (last updated Jul 3, 2013.)&lt;/label&gt;
+					&lt;/div&gt;
+											&lt;div class=&quot;market_purchase_restrictions&quot;&gt;
+							After purchase, this item:							&lt;ul&gt;
+																	&lt;li&gt;will not be tradable for one week&lt;/li&gt;
+																									&lt;li&gt;cannot be listed on the Steam Community Market for one week&lt;/li&gt;
+															&lt;/ul&gt;
+						&lt;/div&gt;
+														&lt;/div&gt;
+				&lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;market_buynow_dialog_placing_order&quot; class=&quot;market_dialog_content_frame market_dialog_content market_dialog_content_darker&quot;&gt;
+		&lt;div id=&quot;market_buy_commodity_status&quot;&gt;&lt;/div&gt;
+		&lt;div id=&quot;market_buy_commodity_throbber&quot;&gt;
+			&lt;img src=&quot;http://steamcommunity-a.akamaihd.net/public/images/login/throbber.gif&quot; alt=&quot;Working...&quot;&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;market_dialog_content_spacer&quot;&gt; &lt;/div&gt;
+		&lt;div id=&quot;market_buy_commodity_purchase_detail&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;market_dialog_content_spacer&quot;&gt; &lt;/div&gt;
+		&lt;a id=&quot;market_buy_commodity_view_in_inventory&quot; href=&quot;#&quot; class=&quot;btn_green_white_innerfade btn_medium_wide&quot; style=&quot;display: none&quot;&gt;&lt;span&gt;View item in inventory&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;div id=&quot;market_buynow_dialog_error&quot;&gt;
+		&lt;br/&gt;
+		&lt;span id=&quot;market_buynow_dialog_error_text&quot;&gt;&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+
+	&lt;script type=&quot;text/javascript&quot;&gt;
+		var g_rgAppContextData = {&quot;753&quot;:{&quot;appid&quot;:753,&quot;name&quot;:&quot;Steam&quot;,&quot;icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/753\/135dc1ac1cd9763dfc8ad52f4e880d2ac058a36c.jpg&quot;,&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/app\/753&quot;},&quot;214610&quot;:{&quot;appid&quot;:214610,&quot;name&quot;:&quot;Cherry Tree High Comedy Club&quot;,&quot;icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/214610\/dd394c890351b494b14bb3fde401e298083dad6b.jpg&quot;,&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/app\/214610&quot;}};
+	var g_rgAssets = {&quot;753&quot;:{&quot;6&quot;:{&quot;1198917579&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:753,&quot;contextid&quot;:&quot;6&quot;,&quot;id&quot;:&quot;1198917579&quot;,&quot;classid&quot;:&quot;176478933&quot;,&quot;instanceid&quot;:&quot;246376139&quot;,&quot;amount&quot;:&quot;0&quot;,&quot;status&quot;:4,&quot;original_amount&quot;:&quot;1&quot;,&quot;background_color&quot;:&quot;&quot;,&quot;icon_url&quot;:&quot;IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A&quot;,&quot;icon_url_large&quot;:&quot;IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA3g5gMEPvUZZEaiHLrVJRsl8vGuCUY7Cjc9ehDNVzDMEe3aujCQrcex4NM6b8w3yr-yCD2H8bXzvLizQF198HKUHaDmOqz7wseycFDqaQeErEQ8BePECozBPPJ2ObkY61oFfr2a6w0B-G0B7J8ATPh-1zTIRPq8hzTMtLMYDznH9I8aLhFtmaUVjWL6zVriUb9WhlXklCxJhHfEaYoPB6nS4rpelPPfSeOZ3OqYh6ZjWOpMEX-A&quot;,&quot;descriptions&quot;:[{&quot;value&quot;:&quot;Handsome lad who's popular with the girls.&quot;}],&quot;tradable&quot;:1,&quot;owner_actions&quot;:[{&quot;link&quot;:&quot;http:\/\/steamcommunity.com\/my\/gamecards\/214610\/?border=1&quot;,&quot;name&quot;:&quot;View badge progress&quot;}],&quot;name&quot;:&quot;Shinnosuke Kamikata (Foil)&quot;,&quot;name_color&quot;:&quot;&quot;,&quot;type&quot;:&quot;Cherry Tree High Comedy Club Foil Trading Card&quot;,&quot;market_name&quot;:&quot;Shinnosuke Kamikata (Foil)&quot;,&quot;market_hash_name&quot;:&quot;214610-Shinnosuke Kamikata (Foil)&quot;,&quot;commodity&quot;:1,&quot;market_tradable_restriction&quot;:7,&quot;market_marketable_restriction&quot;:7,&quot;app_icon&quot;:&quot;http:\/\/cdn.akamai.steamstatic.com\/steamcommunity\/public\/images\/apps\/753\/135dc1ac1cd9763dfc8ad52f4e880d2ac058a36c.jpg&quot;,&quot;owner&quot;:0}}}};
+	var g_rgListingInfo = {&quot;432671323267375695&quot;:{&quot;listingid&quot;:&quot;432671323267375695&quot;,&quot;price&quot;:0,&quot;fee&quot;:0,&quot;publisher_fee_app&quot;:214610,&quot;publisher_fee_percent&quot;:&quot;0.10000000149011612&quot;,&quot;currencyid&quot;:&quot;2001&quot;,&quot;asset&quot;:{&quot;currency&quot;:0,&quot;appid&quot;:753,&quot;contextid&quot;:&quot;6&quot;,&quot;id&quot;:&quot;1198917579&quot;,&quot;amount&quot;:&quot;0&quot;}}};
+	var g_plotPriceHistory = null;
+	var g_timePriceHistoryEarliest = new Date();
+	var g_timePriceHistoryLatest = new Date();
+	var g_strLanguage = &quot;english&quot;;
+	var g_strCountryCode = &quot;US&quot;;
+
+	Event.observe( document, 'dom:loaded', function() {
+		UserYou.LoadContexts( g_rgAppContextData );
+
+							CreateItemHoverFromContainer( g_rgAssets, 'listing_432671323267375695_name', 753, '6', '1198917579', 0 );
+		CreateItemHoverFromContainer( g_rgAssets, 'listing_432671323267375695_image', 753, '6', '1198917579', 0 );
+	
+			var rgAppItems = g_rgAssets[753];
+			var rgContextItems = rgAppItems['6'];
+			var rgItem = rgContextItems['1198917579'];
+			BuildHover( 'largeiteminfo', rgItem, false );
+
+			MarketCheckHash();
+						} );
+
+			$J(document).ready(function(){
+			var line1=[[&quot;Jul 23 2013 01: +0&quot;,6.5,&quot;1&quot;],[&quot;Jul 24 2013 01: +0&quot;,5.026,&quot;1&quot;],[&quot;Jul 25 2013 01: +0&quot;,4.749,&quot;2&quot;],[&quot;Jul 29 2013 01: +0&quot;,4.642,&quot;1&quot;],[&quot;Aug 01 2013 01: +0&quot;,4.5,&quot;1&quot;],[&quot;Aug 07 2013 01: +0&quot;,5,&quot;1&quot;],[&quot;Aug 08 2013 01: +0&quot;,4.99,&quot;2&quot;],[&quot;Aug 09 2013 01: +0&quot;,4.291,&quot;2&quot;],[&quot;Aug 10 2013 01: +0&quot;,3.883,&quot;2&quot;],[&quot;Aug 11 2013 01: +0&quot;,2.99,&quot;1&quot;],[&quot;Aug 13 2013 01: +0&quot;,1.98,&quot;1&quot;],[&quot;Aug 14 2013 01: +0&quot;,1.64,&quot;2&quot;],[&quot;Aug 15 2013 01: +0&quot;,1.714,&quot;2&quot;],[&quot;Aug 16 2013 01: +0&quot;,1.948,&quot;2&quot;],[&quot;Aug 17 2013 01: +0&quot;,2.57,&quot;1&quot;],[&quot;Aug 25 2013 01: +0&quot;,2.3,&quot;1&quot;],[&quot;Aug 26 2013 01: +0&quot;,2.3,&quot;1&quot;],[&quot;Aug 27 2013 01: +0&quot;,2.299,&quot;1&quot;],[&quot;Aug 29 2013 01: +0&quot;,1.5,&quot;1&quot;],[&quot;Aug 30 2013 01: +0&quot;,1.477,&quot;1&quot;],[&quot;Sep 01 2013 01: +0&quot;,2.236,&quot;2&quot;],[&quot;Sep 03 2013 01: +0&quot;,2.53,&quot;1&quot;],[&quot;Sep 08 2013 01: +0&quot;,0.302,&quot;1&quot;],[&quot;Sep 11 2013 01: +0&quot;,2.309,&quot;1&quot;],[&quot;Sep 17 2013 01: +0&quot;,3.35,&quot;1&quot;],[&quot;Sep 21 2013 01: +0&quot;,0.109,
+000009D7
+&quot;1&quot;],[&quot;Sep 25 2013 01: +0&quot;,3.333,&quot;1&quot;],[&quot;Sep 30 2013 01: +0&quot;,2.015,&quot;1&quot;],[&quot;Oct 03 2013 01: +0&quot;,3.164,&quot;1&quot;],[&quot;Oct 05 2013 01: +0&quot;,2.95,&quot;1&quot;],[&quot;Oct 08 2013 01: +0&quot;,2.95,&quot;1&quot;],[&quot;Oct 14 2013 01: +0&quot;,2.79,&quot;1&quot;],[&quot;Oct 17 2013 01: +0&quot;,1.9,&quot;1&quot;],[&quot;Oct 25 2013 01: +0&quot;,1.794,&quot;1&quot;],[&quot;Oct 31 2013 01: +0&quot;,1.33,&quot;1&quot;],[&quot;Nov 02 2013 01: +0&quot;,1.31,&quot;1&quot;],[&quot;Nov 07 2013 01: +0&quot;,1.29,&quot;1&quot;],[&quot;Nov 11 2013 01: +0&quot;,0.941,&quot;2&quot;],[&quot;Nov 13 2013 01: +0&quot;,1.525,&quot;2&quot;],[&quot;Nov 16 2013 01: +0&quot;,1.88,&quot;1&quot;],[&quot;Nov 28 2013 01: +0&quot;,0.353,&quot;1&quot;],[&quot;Nov 30 2013 01: +0&quot;,0.354,&quot;1&quot;],[&quot;Dec 01 2013 01: +0&quot;,1.8,&quot;1&quot;],[&quot;Dec 08 2013 01: +0&quot;,1.15,&quot;1&quot;],[&quot;Dec 11 2013 01: +0&quot;,1.402,&quot;1&quot;],[&quot;Dec 20 2013 01: +0&quot;,1.895,&quot;2&quot;],[&quot;Dec 22 2013 01: +0&quot;,1.9,&quot;1&quot;],[&quot;Dec 24 2013 01: +0&quot;,1.91,&quot;1&quot;],[&quot;Jan 03 2014 01: +0&quot;,1.878,&quot;2&quot;],[&quot;Jan 05 2014 01: +0&quot;,1.88,&quot;1&quot;],[&quot;Jan 08 2014 01: +0&quot;,1.902,&quot;1&quot;],[&quot;Jan 29 2014 01: +0&quot;,2.39,&quot;1&quot;],[&quot;Feb 03 2014 01: +0&quot;,2.41,&quot;1&quot;],[&quot;Feb 11 2014 01: +0&quot;,2.288,&quot;1&quot;],[&quot;Feb 22 2014 01: +0&quot;,1.631,&quot;1&quot;],[&quot;Feb 23 2014 01: +0&quot;,1.57,&quot;1&quot;],[&quot;Feb 28 2014 01: +0&quot;,2.178,&quot;1&quot;],[&quot;Mar 05 2014 01: +0&quot;,2.15,&quot;1&quot;],[&quot;Mar 06 2014 01: +0&quot;,2.19,&quot;1&quot;],[&quot;Mar 14 2014 01: +0&quot;,1.842,&quot;1&quot;],[&quot;Mar 21 2014 01: +0&quot;,2.18,&quot;1&quot;],[&quot;Mar 23 2014 01: +0&quot;,2.221,&quot;1&quot;],[&quot;Apr 10 2014 01: +0&quot;,2.174,&quot;1&quot;],[&quot;Apr 18 2014 01: +0&quot;,2.35,&quot;1&quot;],[&quot;Apr 22 2014 01: +0&quot;,2.07,&quot;1&quot;],[&quot;Apr 23 2014 01: +0&quot;,2.44,&quot;1&quot;],[&quot;Apr 30 2014 01: +0&quot;,2.02,&quot;1&quot;],[&quot;May 03 2014 01: +0&quot;,2.46,&quot;1&quot;],[&quot;May 05 2014 01: +0&quot;,2.5,&quot;1&quot;],[&quot;May 08 2014 01: +0&quot;,2.23,&quot;1&quot;],[&quot;Jun 24 2014 01: +0&quot;,2,&quot;1&quot;],[&quot;Jul 05 2014 01: +0&quot;,1.4,&quot;1&quot;],[&quot;Jul 22 2014 01: +0&quot;,1.69,&quot;1&quot;],[&quot;Jul 30 2014 01: +0&quot;,1.84,&quot;1&quot;],[&quot;Aug 11 2014 01: +0&quot;,1.93,&quot;1&quot;],[&quot;Aug 14 2014 01: +0&quot;,0.99,&quot;1&quot;],[&quot;Aug 31 2014 01: +0&quot;,1.73,&quot;1&quot;],[&quot;Sep 15 2014 01: +0&quot;,1.7,&quot;1&quot;],[&quot;Sep 22 2014 01: +0&quot;,1.934,&quot;1&quot;],[&quot;Oct 14 2014 01: +0&quot;,1.894,&quot;1&quot;],[&quot;Oct 16 2014 01: +0&quot;,1.95,&quot;1&quot;]];
+			g_timePriceHistoryEarliest = new Date();
+			if ( line1 != false )
+			{
+				g_timePriceHistoryEarliest = new Date(line1[0][0]);
+				g_timePriceHistoryLatest = new Date(line1[line1.length-1][0]);
+			}
+
+			var strFormatPrefix = &quot;&amp;#36;&quot;;
+			var strFormatSuffix = &quot;&quot;;
+
+			g_plotPriceHistory = CreatePriceHistoryGraph( line1, 7, strFormatPrefix, strFormatSuffix );
+
+			pricehistory_zoomMonthOrLifetime( g_plotPriceHistory, g_timePriceHistoryEarliest, g_timePriceHistoryLatest );
+		});
+	
+			$J(document).ready( function(){
+			InstallMarketActionMenuButtons();
+		});
+	
+	$J(document).ready( function(){
+		Market_LoadOrderSpread( 1153117 );
+					ItemActivityTicker.Start( 1153117 );
+			});
+	&lt;/script&gt;
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+</span>

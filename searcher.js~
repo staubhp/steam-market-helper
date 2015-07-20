@@ -8,25 +8,12 @@ Searcher = function(searchValue){
 	this.searchValue = searchValue || 'trading card';
 	this.searching = false;
 	this.searchURL = 'http://steamcommunity.com/market/search/render';
-	this.debug = true;
+	this.debug = false;
 
 	this.requestManager = new RequestManager(); //TODO
 	var self = this;
 	
 	//TODO: time limits, debug mode
-}
-
-Searcher.prototype.getListing = function(productName){
-	var self = this;
-	var queryURL = productName + '/render/?query=&start=0&count=10';
-	var requestObj = new RequestObject('GET', queryURL);
-	requestObj.error = function(err){
-		console.info(err);
-	}
-	requestObj.success = function(data){
-		self.parser.parseListing(productName, data);
-	}
-	this.requestManager.makeRequest(requestObj);
 }
 
 Searcher.prototype.search = function(pageNumber){
@@ -40,7 +27,6 @@ Searcher.prototype.search = function(pageNumber){
 	}
 	var queryURL = this.searchURL + '?count=' + this.searchParams.pageSize + '&start=' + start + '&query=' + encodeURIComponent(this.searchValue);
 
-	debugger;
 	var requestObj = new RequestObject('GET', queryURL);
 	requestObj.searcher = self;
 	requestObj.parser = self.parser; //TODO:
@@ -55,9 +41,9 @@ Searcher.prototype.search = function(pageNumber){
 			}
 		}	
 		this.searcher.searching = false;
-		var productNames = this.parser.parseHtmlResultPage(data.results_html);
-		$(productNames).each(function(productName){
-			self.getListing(productName);
+		var productURLs = this.parser.parseHtmlResultPage(data.results_html);
+		$(productURLs).each(function(index,productURL){
+			self.getProduct(productURL);
 		});
 	};
 	requestObj.error = function(err){
@@ -65,7 +51,6 @@ Searcher.prototype.search = function(pageNumber){
 		this.searcher.searching = false;
 
 	};
-	debugger;
 	if (self.debug){
 		var data = $('#searchData').text();
 		requestObj.success(data);
@@ -74,4 +59,24 @@ Searcher.prototype.search = function(pageNumber){
 	}
 }
 
+Searcher.prototype.getProduct = function(productURL){
+	var self = this;
+	var queryURL = productURL + '?cc=us'; //+ '/render/?query=&start=0&count=10';
+	var requestObj = new RequestObject('GET', queryURL);
+	requestObj.error = function(err){
+		console.info(err);
+	}
+	requestObj.success = function(data){
+		self.parser.parseProduct(data, productURL);
+		//All done at this point. Parser will hand it over to analyzer
+	}
+
+	if(self.debug){
+		var data = $('#productData').text();
+		requestObj.success(data);
+	}
+	else{
+		this.requestManager.makeRequest(requestObj);
+	}
+}
 
