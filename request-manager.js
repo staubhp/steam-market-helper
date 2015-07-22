@@ -1,10 +1,21 @@
 RequestManager = function(){
 
-	//TODO: input queue
+	this.queue = new Queue();
+	this.queue.start();
+	this.minRateLimit = 0;
+	this.maxRateLimit = 0;
 }
 
 
-RequestManager.prototype.makeRequest = function(requestObject){
+RequestManager.prototype.makeRequest = function(requestObject, instant){
+	if (instant) //careful, this bypasses queue
+		this._makeRequest(requestObject);
+	else
+		this.queue.enqueue(this._makeRequest, [requestObject], this.minRateLimit, this.maxRateLimit);
+}
+
+RequestManager.prototype._makeRequest = function(requestObject){
+	debugger;
 	$.ajax(requestObject);
 }
 

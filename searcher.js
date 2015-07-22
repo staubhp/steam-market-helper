@@ -8,13 +8,16 @@ Searcher = function(searchValue){
 	this.searchValue = searchValue || 'trading card';
 	this.searching = false;
 	this.searchURL = 'http://steamcommunity.com/market/search/render';
-	this.debug = true;
+	this.debug = false;
 
 	this.requestManager = new RequestManager(); //TODO
+	this.requestManager.minRateLimit = 1;
+	this.requestManager.maxRateLimit = 5;
 	var self = this;
 	
 	//TODO: time limits, debug mode
 }
+
 
 Searcher.prototype.search = function(pageNumber){
 	var self = this;
@@ -51,6 +54,7 @@ Searcher.prototype.search = function(pageNumber){
 		this.searcher.searching = false;
 
 	};
+
 	if (self.debug){
 		var data = $('#searchData').text();
 		requestObj.success(data);

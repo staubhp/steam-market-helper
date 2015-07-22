@@ -1,9 +1,11 @@
 <script src="jquery-2.1.4.js"></script>
 <script src="searcher.js"></script>
 <script src="parser.js"></script>
+<script src="broker.js"></script>
 <script src="analyzer.js"></script>
 <script src="product.js"></script>
 <script src="request-manager.js"></script>
+<script src="helpers/math-helpers.js"></script>
 <script src="main.js"></script>
 
 
