@@ -1,6 +1,7 @@
 Searcher = function(searchValue){
 	//Searcher will iterate through pages of search results,
 	//getting the HTML listing for each result and passing it to Parser
+	var self = this;
 	this.searchParams ={
 		pageSize : 100
 	}
@@ -8,19 +9,22 @@ Searcher = function(searchValue){
 	this.searchValue = searchValue || 'trading card';
 	this.searching = false;
 	this.searchURL = 'http://steamcommunity.com/market/search/render';
-	this.debug = false;
 
 	this.requestManager = new RequestManager(); //TODO
 	this.requestManager.minRateLimit = 1;
 	this.requestManager.maxRateLimit = 5;
-	var self = this;
-	
-	//TODO: time limits, debug mode
+
+	this.logger = new Logger();
+	this.logger.name = "searchLog";
+
+
+	this.debug = true;
 }
 
 
 Searcher.prototype.search = function(pageNumber){
 	var self = this;
+	this.logger.log("Searching. Debug = " + this.debug);
 	this.searching = true;
 	var start = 0;
 	if (pageNumber) {

@@ -14,7 +14,7 @@ Logger.prototype.log = function(message){
 	if (ul){
 		var li = $("<li>" + partialMessage + "</li>");
 		ul.prepend(li);
-		ul.fadeIn(100).fadeOut(100).fadeIn(100);
+		li.fadeIn(100).fadeOut(100).fadeIn(100);
 	}
 	
 }
