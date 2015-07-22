@@ -1,8 +1,11 @@
 Parser = function(){
 	this.analyzer = new Analyzer();
+	this.logger = new Logger();
+	this.logger.name = "parserLog";
 };
 
 Parser.prototype.parseHtmlResultPage= function(htmlResultPage){
+	this.logger.log("Parsing HTML search result page");
 	htmlResultPage = htmlResultPage.replace(/src/g, "_src");
 	var all = $(htmlResultPage);
 	var links = all.find('div.market_listing_row');
@@ -21,7 +24,8 @@ function decodeHTML(html){
 	return txt.value;
 }
 
-Parser.prototype.parseProduct = function(htmlProductPage, productURL){
+Parser.prototype.parseProduct = function(htmlProductPage, productURL, productName){
+	this.logger.log("Parsing product '" + productName +"'");
 	htmlProductPage = decodeHTML(htmlProductPage);
 	htmlProductPage = htmlProductPage.replace(/src/g, "_src");
 	var elements = $(htmlProductPage);
@@ -45,6 +49,7 @@ Parser.prototype.parseProduct = function(htmlProductPage, productURL){
 	myProduct.url = productURL;
 	myProduct.avgPrice = Number(avg.toFixed(2));
 	myProduct.minPrice = prices[0];
+	myProduct.name = productName;
 	myProduct.diffPrice = Number((avg - prices[0]).toFixed(2));
 	myProduct.diffPriceWithoutFee = Number((this.diffPrice - (avg * 0.15)).toFixed(2));
 	var result = this.minPrice / this.avgPrice;
@@ -53,6 +58,8 @@ Parser.prototype.parseProduct = function(htmlProductPage, productURL){
 
 	console.log(myProduct);
 	this.analyzer.analyze(myProduct);
+
+	return myProduct;
 
 	
 	function createListing(listingSpan){

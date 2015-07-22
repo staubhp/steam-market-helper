@@ -4,6 +4,7 @@ Product = function(){
 	this.minPrice = -1;
 	this.diffPrice = -1;
 	this.url = "";
+	this.name = "";
 	this.diffPriceWithoutFee = -1;
 	this.averages = [];
 	

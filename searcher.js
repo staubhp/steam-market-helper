@@ -17,7 +17,6 @@ Searcher = function(searchValue){
 	this.logger = new Logger();
 	this.logger.name = "searchLog";
 
-
 	this.debug = true;
 }
 
@@ -44,6 +43,7 @@ Searcher.prototype.search = function(pageNumber){
 			if (self.debug)
 				pages=1;
 			for (var i = 1; i <= pages; i++){
+				requestObj.searcher.logger.log("Getting page " + i + " of " + pages);
 				this.searcher.search(i);
 			}
 		}	
@@ -75,7 +75,9 @@ Searcher.prototype.getProduct = function(productURL){
 		console.info(err);
 	}
 	requestObj.success = function(data){
-		self.parser.parseProduct(data, productURL);
+		var name = decodeURIComponent(productURL.substring(productURL.lastIndexOf('/') + 1)); 
+		self.logger.log('Getting product <a href="' + productURL + '">' + name + '</a>');
+		self.parser.parseProduct(data, productURL, name);
 		//All done at this point. Parser will hand it over to analyzer
 	}
 

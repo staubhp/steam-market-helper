@@ -12,9 +12,8 @@ Logger.prototype.log = function(message){
 
 	var ul = $("#" + this.name );
 	if (ul){
-		var li = $("<li>" + partialMessage + "</li>");
-		ul.prepend(li);
-		li.fadeIn(100).fadeOut(100).fadeIn(100);
+		var li = $("<li style='display:none'>" + partialMessage + "</li>");
+		li.prependTo(ul).fadeIn('slow');
 	}
 	
 }

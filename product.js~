@@ -8,3 +8,9 @@ Product = function(){
 	this.averages = [];
 	
 }
+
+Product.prototype.buy = function(){
+}
+
+Product.prototype.sell = function(){
+}
