@@ -9,21 +9,20 @@ Searcher = function(searchValue){
 	this.searchValue = searchValue || 'trading card';
 	this.searching = false;
 	this.searchURL = 'http://steamcommunity.com/market/search/render';
+	this.maxPages = 2;
 
-	this.requestManager = new RequestManager(); //TODO
-	this.requestManager.minRateLimit = 1;
-	this.requestManager.maxRateLimit = 5;
+	this.requestManager = new RequestManager(); 
+	this.requestManager.minRateLimit = 4;
+	this.requestManager.maxRateLimit = 8;
 
 	this.logger = new Logger();
 	this.logger.name = "searchLog";
-
-	this.debug = true;
 }
 
 
 Searcher.prototype.search = function(pageNumber){
 	var self = this;
-	this.logger.log("Searching. Debug = " + this.debug);
+	this.logger.log("Searching. Debug = " + debug);
 	this.searching = true;
 	var start = 0;
 	if (pageNumber) {
@@ -40,10 +39,12 @@ Searcher.prototype.search = function(pageNumber){
 		data = JSON.parse(data);
 		if (start == 0){
 			var pages = (data.total_count / this.searcher.searchParams.pageSize);
-			if (self.debug)
+			if (debug)
 				pages=1;
 			for (var i = 1; i <= pages; i++){
-				requestObj.searcher.logger.log("Getting page " + i + " of " + pages);
+				if (i>=this.searcher.maxPages)
+					break;
+				this.searcher.logger.log("Getting page " + i + " of " + pages);
 				this.searcher.search(i);
 			}
 		}	
@@ -59,7 +60,7 @@ Searcher.prototype.search = function(pageNumber){
 
 	};
 
-	if (self.debug){
+	if (debug){
 		var data = $('#searchData').text();
 		requestObj.success(data);
 	}else{
@@ -76,12 +77,12 @@ Searcher.prototype.getProduct = function(productURL){
 	}
 	requestObj.success = function(data){
 		var name = decodeURIComponent(productURL.substring(productURL.lastIndexOf('/') + 1)); 
-		self.logger.log('Getting product <a href="' + productURL + '">' + name + '</a>');
-		self.parser.parseProduct(data, productURL);
+		self.logger.log('Getting product <a href="' + queryURL + '">' + name + '</a>');
+		self.parser.parseProduct(data, productURL, name);
 		//All done at this point. Parser will hand it over to analyzer
 	}
 
-	if(self.debug){
+	if(debug){
 		var data = $('#productData').text();
 		requestObj.success(data);
 	}

@@ -7,11 +7,7 @@ Product = function(){
 	this.name = "";
 	this.diffPriceWithoutFee = -1;
 	this.averages = [];
+	this.result = -1;
 	
 }
 
-Product.prototype.buy = function(){
-}
-
-Product.prototype.sell = function(){
-}

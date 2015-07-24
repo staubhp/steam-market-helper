@@ -16,7 +16,7 @@ Queue.prototype.start = function(){
 
 Queue.prototype.enqueue = function(fn, args, minRateLimit, maxRateLimit){
 	this.q.push({fn:fn, args:args, min:minRateLimit, max:maxRateLimit});
-	this.logger.log("Enqueued " + obj.fn +". Min RL = " + minRateLimit + " Max RL = " + maxRateLimit);
+	this.logger.log("Enqueued " + fn +". Min RL = " + minRateLimit + " Max RL = " + maxRateLimit);
 }
 
 Queue.prototype.dequeue = function(){

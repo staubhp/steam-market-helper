@@ -16,10 +16,11 @@ Queue.prototype.start = function(){
 
 Queue.prototype.enqueue = function(fn, args, minRateLimit, maxRateLimit){
 	this.q.push({fn:fn, args:args, min:minRateLimit, max:maxRateLimit});
-	this.logger.log("Enqueued " + obj.fn +". Min RL = " + minRateLimit + " Max RL = " + maxRateLimit);
+	this.logger.log("Enqueued " + fn +". Min RL = " + minRateLimit + " Max RL = " + maxRateLimit);
 }
 
 Queue.prototype.dequeue = function(){
+	this.logger.log("Deq");
 	if (this.q.length == 0)
 		return;
 
@@ -29,7 +30,7 @@ Queue.prototype.dequeue = function(){
 	obj.max = obj.max || 0;
 	var wait = Math.floor(Math.random() * (obj.max - obj.min +1)) + obj.min;
 	this.logger.log("Dequeued " + obj.fn +". Waiting " + wait + " seconds to execute");
-	setTimeout(function(){obj.fn.apply(this, obj.args)}, wait*1000);
+	setTimeout(function(){ obj.fn.apply(this, obj.args)}, wait*1000);
 }
 
 

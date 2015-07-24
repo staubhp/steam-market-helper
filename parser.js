@@ -25,6 +25,7 @@ function decodeHTML(html){
 }
 
 Parser.prototype.parseProduct = function(htmlProductPage, productURL, productName){
+	//TODO: need to handle new style of product page (no listings, just min price)
 	this.logger.log("Parsing product '" + productName +"'");
 	htmlProductPage = decodeHTML(htmlProductPage);
 	htmlProductPage = htmlProductPage.replace(/src/g, "_src");
@@ -51,8 +52,8 @@ Parser.prototype.parseProduct = function(htmlProductPage, productURL, productNam
 	myProduct.minPrice = prices[0];
 	myProduct.name = productName;
 	myProduct.diffPrice = Number((avg - prices[0]).toFixed(2));
-	myProduct.diffPriceWithoutFee = Number((this.diffPrice - (avg * 0.15)).toFixed(2));
-	var result = this.minPrice / this.avgPrice;
+	myProduct.diffPriceWithoutFee = Number((myProduct.diffPrice - (avg * 0.15)).toFixed(2));
+	var result = myProduct.minPrice / myProduct.avgPrice;
 	myProduct.result = Number(result.toFixed(2));
 	myProduct.averages = avgs;
 

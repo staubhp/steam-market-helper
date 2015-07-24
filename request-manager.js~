@@ -1,11 +1,14 @@
 RequestManager = function(){
-
 	this.queue = new Queue();
 	this.queue.start();
 	this.minRateLimit = 0;
 	this.maxRateLimit = 0;
 }
 
+var totalRequests = 0;
+var timeStarted = null;
+var requestsPerMinute = 0;
+var runningMinutes = 0;
 
 RequestManager.prototype.makeRequest = function(requestObject, instant){
 	if (instant) //careful, this bypasses queue
@@ -16,7 +19,26 @@ RequestManager.prototype.makeRequest = function(requestObject, instant){
 
 RequestManager.prototype._makeRequest = function(requestObject){
 	debugger;
+	totalRequests += 1;
+	if (timeStarted == null)
+		timeStarted = new Date()
 	$.ajax(requestObject);
+	updateCounts();
+}
+
+function updateCounts(){
+	debugger;
+	totalRequests +=1;
+	if (timeStarted == null){
+		timeStarted = new Date().getTime();
+	}
+	var totalMilliseconds = new Date().getTime() - timeStarted;
+	var totalSeconds = totalMilliseconds / 1000;
+	requestsPerMinute = Math.round(((totalRequests/(totalSeconds/60))*100)/100)
+	runningMinutes = Math.round(((totalSeconds/60)*100)/100);
+	$('#requestsPerMinute').text(requestsPerMinute);
+	$('#totalRequests').text(totalRequests);
+	$('#runningMinutes').text(runningMinutes);
 }
 
 RequestObject = function(httpVerb, url, payload){
